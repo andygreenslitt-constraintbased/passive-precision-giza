@@ -1,0 +1,227 @@
+Here is a consolidated, public-facing engineering brief that distills the critical findings into a single document. It covers the core physics, key numbers, gate structure, and claim boundaries without requiring the full 50-file stack.
+
+---
+
+# Large Precision Stone Body — Construction Engineering Audit
+
+Public label: large precision stone body. The name of the structure is not part of the model.
+
+**Status:** `VALIDATION-READY ENGINEERING SCREEN — NOT ARCHAEOLOGICALLY VALIDATED`
+**Purpose:** A first-principles feasibility screen of a large-precision-stone-body construction system under stated assumptions. This is a mathematical and physical audit; it does not assert historical proof.
+
+---
+
+## 1. Overall Hypothesis
+
+This structure can be modeled as a **distributed constraint system**: ordinary mechanics move and place the blocks; precision is maintained by systematic drift suppression; and a water-applied lower node (the lower node chamber and connected passages) may function as air-management, vent, reset, and final-isolation infrastructure. No long-range hydraulic lifting or vibration transfer is required or claimed.
+
+**Core invariant:** The exterior geometry (level base, square plan, coherent slope, apex convergence) must close while all internal subsystems satisfy their physical constraints.
+
+---
+
+## 2. Key Physical Finding: The Lower Hydraulic Node
+
+If water from a ground-level supply (e.g., a canal at ≈10 m above the pyramid base) is routed into the lower node chamber (floor ≈ -27 m), the hydrostatic head is simply:
+
+\[
+P = \rho \, g \, h
+\]
+
+Where:
+- \(\rho = 1000\ \text{kg/m}^3\) (water density)
+- \(g = 9.81\ \text{m/s}^2\)
+- \(h\) = vertical water head (≈ 37 m for a 10 m source elevation)
+
+Resulting pressure at the lower chamber:
+
+| Depth (m) | Head (m) | Pressure (psi) | Pressure (kPa) |
+|-----------|----------|----------------|-----------------|
+| 30.0      | 30.0     | ≈ 42.7         | 294.3           |
+| 33.0      | 33.0     | ≈ 46.9         | 323.7           |
+| 35.0      | 35.0     | ≈ 49.8         | 343.4           |
+
+These values fall within a band of **~43–50 psi**, achievable from a purely gravity-fed input. This is the pressure used in all subsequent vent/reset/isolation screens.
+
+**Caution:** The water input is an *engineering assumption*; the existence of a preserved canal or conduit is not claimed.
+
+---
+
+## 3. Vent, Air-Management, and Reset
+
+If the lower chamber were sealed, the trapped air would undergo adiabatic compression:
+
+\[
+P_1 V_1^\gamma = P_2 V_2^\gamma \quad (\gamma \approx 1.4 \text{ for air})
+\]
+
+This would raise pressure far beyond safe limits. Therefore, the system must be **vented**. A simple orifice screen for air discharge is:
+
+\[
+Q = C_d \, A \sqrt{\frac{2 \Delta P}{\rho_{\text{air}}}}
+\]
+
+Where:
+- \(C_d \approx 0.62\) (discharge coefficient)
+- \(A\) = effective vent area (m²)
+- \(\Delta P\) = pressure difference (Pa)
+- \(\rho_{\text{air}} \approx 1.2\ \text{kg/m}^3\)
+
+**Critical finding:**  
+- Full passage cross-sections (e.g., 0.79–1.26 m²) produce **over‑violent, uncontrolled** venting (flow rates > 10 m³/s for small event volumes).  
+- An effective vent area of **0.005–0.05 m²** (achievable via natural leakage gaps, constrictions, or a controlled choke) yields manageable reset times on the order of seconds to a few hundred seconds for event volumes up to 50 m³.  
+- The granite plugs, with millimeter-scale perimeter gaps, naturally produce effective leakage areas in this controlled band, acting as a **final isolation boundary** rather than precision valves.
+
+**Reset time** for a 10 m³ event with 0.02 m² effective vent area at 42.7 psi is approximately:
+
+\[
+t_{\text{reset}} \approx \frac{\text{event volume}}{C_d \, A \sqrt{2 \Delta P / \rho_{\text{air}}}} \approx 5–10\ \text{seconds}
+\]
+
+Thus, the lower node can be repeatedly vented and reset within a construction cycle.
+
+**Compressible flow correction (required at high pressure ratios):**
+The incompressible formula above is a rough screen only. When the upstream-to-downstream pressure ratio exceeds the critical value for air:
+
+\[
+\frac{P_1}{P_2} \geq \left(\frac{\gamma + 1}{2}\right)^{\gamma/(\gamma-1)} \approx 1.893 \quad (\gamma = 1.4)
+\]
+
+flow becomes choked at the vent throat and the simple formula understates the actual reset time. The correct choked-flow discharge is:
+
+\[
+Q_{\text{choked}} = C_d \, A \, P_1 \sqrt{\frac{\gamma}{R T} \left(\frac{2}{\gamma+1}\right)^{(\gamma+1)/(\gamma-1)}}
+\]
+
+Additionally, reset time must account for both the air-escape path and the water-outflow path:
+
+\[
+t_{\text{reset}} = \max\left(t_{\text{air-inflow-limited}},\ t_{\text{water-outflow-limited}}\right)
+\]
+
+The incompressible formula is valid for small pressure differentials only. All reset-time estimates at large head conditions require the compressible treatment. The choked condition sets a ceiling on vent throughput regardless of vent area.
+
+---
+
+## 4. Course‑by‑Course Construction Throughput
+
+A full 210‑course schedule was modeled with:
+- Lane count tapering from 32 at the base to 4 at the top.
+- Cycle time increasing with height: \(t_{\text{cycle}} = 30 + 0.102\, h\) minutes.
+- Downtime 20%, acceptance efficiency 75%.
+
+**Throughput ratio** (capacity / required blocks per day) and total schedule days are computed per course, not by a global average. The baseline 20‑year schedule **fails** (schedule ratio ≈ 0.68) under these default assumptions. However, a combination of plausible period‑compatible improvements closes the schedule:
+
+| Scenario                     | Total days required | Schedule ratio | Pass? |
+|------------------------------|---------------------|----------------|-------|
+| Baseline                     | ~8,815              | 0.68           | FAIL  |
+| + acceptance 0.85            | ~7,777              | 0.77           | FAIL  |
+| + base cycle 27 min           | ~7,534              | 0.80           | FAIL  |
+| + workday 12 h                | ~7,346              | 0.82           | FAIL  |
+| + max lanes 36               | ~8,122              | 0.74           | FAIL  |
+| **Combined repair** (0.85, 12 h, 27 min, 36 lanes) | **~5,200** | **1.15** | **PASS** |
+
+The combined repair uses only ordinary mechanics; no hydraulic block movement is required. The mid-body (courses 46-130) is the binding schedule bottleneck.
+
+---
+
+## 5. Precision Drift and Restoration
+
+Precision at Giza scale is not repeated perfect placement; it is **systematic-bias suppression**. The naive division of ±15 mm over 210 courses gives ≈0.071 mm/course—a warning about directional bias, not a literal placement tolerance.
+
+The drift model is:
+
+\[
+\text{Error}_{\text{cumulative}} = \sum (\text{random error} + \text{systematic bias} - \text{correction})
+\]
+
+A detection threshold of 1.5 mm, with correction capacity 10 mm and checks every course, easily bounds drift for early courses. Towards the top, reduced workspace and reference access make detection harder. The precision gate passes only if:
+
+- Each error mode has a named reference, detection method, correction method, correction authority, check interval, and lock-in threshold.
+- References (water level, corner lines, slope rule) are cross-checked and remain more stable than the error being corrected.
+
+---
+
+## 6. Upper Convergence and Final Closure
+
+As the working platform shrinks below 80 m side length, phased operations become mandatory: transport, braking, final placement, correction, reference checking, casing finish, and access removal cannot all occupy the same space simultaneously.
+
+An optional **upper internal staging gallery** (approx. 30 m x 2.5-4 m) can provide congestion-relief credit (~31.3 m2 effective usable area -- gross area x usability factor). Staging volume is not placement volume. Even with this assist, the last courses 206-210 remain **critical** -- the platform area (<=19 m2) is far below the required operation footprint (~69 m2 without credit). The staging gallery does not eliminate final-course criticality. Final closure therefore requires its own dedicated mechanism gate: all 7 subgates must pass independently. Least fragile repair: small-block closure 500-1000 kg. Ordinary hauling ends. Controlled final handling begins.
+
+---
+
+## 7. Gate‑Ledger Structure
+
+Every physical constraint is expressed as a **gate** with:
+
+- Available budget and required budget
+- Ratio = available / required (pass when ≥ 1 + margin)
+- Pass condition, fail condition, and a **falsifier** (what would break the claim)
+
+Example gates:
+
+| Gate | Subsystem | Binding Constraint | Ratio | Pass Condition | Falsifier |
+|------|-----------|-------------------|-------|----------------|-----------|
+| G1 – Hydrostatic feasibility | Lower node | Available pressure vs required | P_hs / P_min | >1.2 | Inadequate head or routing |
+| G2 – Pressure safety | Lower node | Safe pressure vs actual | allowable / max(P_hs−P_atm) | >1.5 | Stone cracking, evidence of overpressure |
+| G3 – Vent band | Air control | Effective vent area within 0.005–0.05 m² | min(A-0.005, 0.05-A) | ≥0 | Vent too small (overpressure) or too large (over‑venting) |
+| G4 – Buffer volume | Air buffer | Chamber volume / event volume | V_ch / V_event | ≥4 | Chamber too small to control pressure rise |
+| G5 – Reset time | Reset cycle | Allowed cycle time / computed drain time | T_max / t_drain | ≥1 | Reset too slow; cycle blocked |
+| G6 – Throughput | Mass movement | Accepted blocks per day / required | capacity / required | ≥1 | Schedule ratio <1 |
+| G7 – Precision | Drift suppression | Correction capacity / accumulated drift | C_max / (drift·interval) | ≥1 | Uncorrected bias exceeds tolerance |
+| G8 – Workcell area | Upper convergence | Effective area / required area | A_eff / 180 m² | ≥1 | Crews, tools, references cannot coexist |
+| G9 – Final closure | Top courses | Available area (with assist) / operation required area | A_eff / 69 m² | ≥1 | No physically possible manoeuvre |
+| G10 – Plug isolation | Decommissioning | Plug holding force / hydrostatic force | F_hold / (P_hs·A) | >3 | Water bypassing plugs |
+
+Every gate is phrased as a **conditional engineering screen**, not a historical claim.
+
+---
+
+## 8. Surviving and Blocked Claims
+
+**Surviving claims** (conditional, subject to measurement):  
+- Ordinary mechanics can move and place the blocks.  
+- Throughput is repairable with modest combined improvements (lanes, cycle, work hours).  
+- Precision is explainable by systematic drift suppression, not superhuman skill.  
+- A water‑applied lower node can function as air‑management, vent, reset, and isolation infrastructure, provided a source connection and vent/reset path exist.  
+- Granite plugs naturally form a final isolation boundary via leakage gaps.  
+- Upper workcell closure requires phased sequencing; an optional upper internal staging gallery can ease congestion (~31.3 m2 effective credit) but does not solve the final courses. Staging volume is not placement volume.
+- Schedule closure baseline fails (ratio ~0.68). Combined moderate repair is conditionally feasible (ratio ~1.15, Scenario 6). Margin is thin: drops to ~1.10 at 5% precision overhead. Mid-body courses 46-130 are the binding bottleneck.
+- Final courses require a dedicated closure mechanism gate (7 subgates, all required). Least fragile repair: small-block closure 500-1000 kg.
+- Residue chemistry should show a non-random spatial pattern (stronger wet signals below plug boundary, contrast with upper dry zones) if the hydraulic model is relevant.
+
+**Blocked claims** (not supported by this audit):  
+- Hydraulic lifting is proven.  
+- Water moved every block.  
+- Lower pulse mechanically seats upper blocks.  
+- Grand Gallery is a waveguide or King’s Chamber received useful pressure from below.  
+- Salt/alum/sulfate residues alone prove the system.  
+- Historical use is established.
+- Upper workcell closes without phased sequencing or final-course external assistance.
+- Upper internal staging gallery eliminates final-course criticality.
+- Baseline schedule closes without repair.
+- Ordinary hauling closes final courses.
+- Final closure is solved by hidden or internal space.
+- The model proves this was the actual method.
+
+---
+
+## 9. Validation and Next Steps
+
+The model is **validation‑ready**, not validated. The highest‑priority physical tests are:
+
+1. **Lower‑node water‑air scale model** — can a chamber of ~460 m³ with a suitable vent be repeatedly filled and reset without unsafe pressure?  
+2. **Well Shaft / vent capacity survey** — are the actual passage geometries sufficient to pass displaced air at the required rate?  
+3. **Plug leakage and isolation test** — do the actual plug contact zones provide enough isolation to preserve a wet/dry residue contrast?  
+4. **Throughput / lane‑cycle trial** — can the claimed lane count and cycle time be achieved with period‑typical sledges and crews?  
+5. **Phased upper‑workcell mockup** — can the final placement, correction, and casing finish tasks be physically sequenced on a small platform?  
+6. **Residue mineral mapping** — a controlled sampling of salts, sulfates, and sediment against the predicted lower‑wet / plug‑boundary / upper‑dry pattern.
+
+---
+
+## 10. One‑Line Takeaway
+
+**This model screens as a physically consistent, conditional engineering system for a large precision stone body; it does not claim historical truth, and every claim is accompanied by a stated falsifier.**
+
+---
+
+*This consolidated report is drawn from a full engineering audit package that includes dimensionally‑verified equations, sensitivity tables, Python‑based simulators, and a governance framework that enforces claim discipline. The underlying math is standard; the novelty lies in the systematic constraint‑maneuvering approach that refuses to accept “could have” without an available‑vs‑required ratio and a named failure condition.*
