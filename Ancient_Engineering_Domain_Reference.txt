@@ -1,0 +1,1018 @@
+BUILT BY CONSTRAINT — ANCIENT ENGINEERING DOMAIN REFERENCE
+GPT Knowledge File | Systems Archaeology Series
+Version 1.0 | May 2026
+Author: A.G. / Built by Constraint LLC
+
+============================================================
+HOW TO USE THIS FILE
+============================================================
+
+This file is a domain knowledge reference for a constraint-governed GPT.
+Every claim in this file is labeled with its evidence status.
+All equations are screening tools — they organize uncertainty, not replace field testing.
+
+Default response posture:
+- Reduce the request to a bounded object before answering.
+- Identify which physical gate governs the claim.
+- State surviving claims, blocked claims, and open questions separately.
+- Do not promote a route or repair object into a proven result.
+- If the gate cannot close, state REPAIR or OPEN — not a conclusion.
+
+Claim-status vocabulary used throughout:
+  CONDITIONAL PASS — physically coherent under stated assumptions; not archaeologically proven
+  BLOCKED — does not survive constraint audit; do not forward
+  FALSIFIABLE PREDICTION — testable; outcome would strengthen or weaken the model
+  COMPATIBLE — dimensionally consistent; does not prove use
+  OPEN — gate not yet closeable with available evidence
+
+
+============================================================
+SECTION 1 — METHODOLOGY: SYSTEMS ARCHAEOLOGY
+============================================================
+
+1.1 PASSIVE PRECISION HYPOTHESIS (PPH)
+Ancient builders achieved extraordinary precision not through extraordinary skill alone,
+but through systems designed so that precision emerged inevitably from physical constraints.
+Gravity, fluid mechanics, Euclidean geometry, and material properties did the hard work.
+The system was the primary precision instrument — not the individual.
+
+Three sub-claims:
+(a) The precision of structures such as Giza is empirically verified and real.
+(b) The mechanisms that produced it were physical, not mystical.
+(c) Those mechanisms were deliberately designed into the construction system.
+
+1.2 THE SIX MECHANISMS (UNIVERSAL PRECISION TOOLKIT)
+M1 — Hydraulic Leveling: Still water surface is perpendicular to gravity. Always.
+     Equation: P = rho * g * h (fluid statics)
+     Application: Basin leveling, channel datum, settlement detection.
+
+M2 — Gravity-Plumb Constraint: A suspended mass hangs vertical. Always.
+     Application: Vertical reference, plumb bobs, drift detection.
+
+M3 — Stellar and Solar Alignment: Fixed astronomical references for cardinal orientation.
+     Application: True north establishment, face alignment to within arcminutes.
+
+M4 — Geometric Self-Correction: Constraint propagation bounds error accumulation.
+     The system detects and corrects errors before they lock in.
+     Key condition: correction_capacity / expected_degradation >= 1 + margin
+
+M5 — Material Compliance: Gypsum mortar plastic during setting, rigid after.
+     Allows fine-tuning at placement, then locks.
+     Material: gypsum harder than copper, softer than limestone.
+
+M6 — Perimeter Bootstrapping: Each course inherits its reference from the course below.
+     Error propagation is bounded rather than free-running.
+
+Universal adoption: M2 and M4 appear in every stacked-element construction system, everywhere.
+     They are not choices — they are physics.
+
+1.3 SYSTEMS ARCHAEOLOGY PROTOCOL
+Step 1: Quantify the anomaly precisely (not "very precise" — state the actual deviation)
+Step 2: Propose a physical mechanism capable of producing that precision
+Step 3: Verify simultaneous constraint satisfaction (one mechanism, all parameters)
+Step 4: State the falsification condition (what observation would disprove it)
+Step 5: Cross-cultural validation (independent discovery = physical necessity)
+Step 6: Decline diagnostics (mechanism abandonment = specific precision degradation)
+
+1.4 ONTOLOGICAL HIERARCHY
+Level 1 — Artifact: physical object, material properties
+Level 2 — Structure: geometric relationships, positional information
+Level 3 — System: operating mechanisms, construction constraints, feedback loops
+Level 4 — Meta-System: governing physical laws (fluid statics, gravity, Euclidean geometry, material mechanics)
+Systems Archaeology operates at Levels 3 and 4.
+
+1.5 CONSTRAINT GATE FORMAT
+Every claim must pass through:
+  gate -> budget -> ratio -> conflict check -> falsifier -> validation protocol
+
+  Gate: the specific physical function that must work
+  Budget: available force, time, space, energy, precision, or material
+  Ratio: available / required (ratio < 1.0 FAILS)
+  Binding constraint: min(ratio_i) across all gates
+  Falsifier: the specific measurement that would collapse the gate
+
+1.6 CLAIM BOUNDARY DISCIPLINE
+Systems Archaeology CAN establish:
+  - Physical mechanisms capable of producing observed precision
+  - That a mechanism satisfies all constraints simultaneously
+  - Specific observations that would falsify a hypothesis
+  - That no alternative mechanism with equivalent explanatory power exists
+  - The pattern of precision decline mapped to mechanism abandonment
+
+Systems Archaeology CANNOT establish:
+  - That any mechanism was actually used historically
+  - Why builders chose their methods (intent, cosmology, religion)
+  - That convergence proves contact between civilizations
+  - Historical construction sequence without direct archaeological evidence
+
+
+============================================================
+SECTION 2 — MATH SPINE: UNIVERSAL EQUATIONS
+============================================================
+
+All equations are dimensional. Always check units. Never skip unit verification.
+
+2.1 STATICS AND MASS
+  Weight:               W = m * g           (N; m in kg, g = 9.81 m/s²)
+  Bearing stress:       sigma = W / A       (Pa = N/m²; convert: 1 MPa = 1,000,000 Pa)
+  Factor of safety:     FoS = capacity / demand
+  Overturning moment:   M_overturn = F_h * h  (N·m)
+  Restoring moment:     M_restore = W * d     (N·m)
+
+2.2 FRICTION AND TRANSPORT
+  Friction force:       F_f = mu * N        (N; N = normal force)
+  Ramp force:           F = W * (sin(theta) + mu * cos(theta))
+  Transport workforce:  n_workers = F_required / F_per_worker
+  Sustained human pull: 300 N per person (horizontal, sustained)
+  Short-burst human pull: 500 N per person
+
+2.3 FLUID MECHANICS
+  Hydrostatic pressure: P = rho * g * h     (Pa; rho_water = 1000 kg/m³)
+  Orifice flow:         Q = Cd * A * sqrt(2 * dP / rho)   (m³/s; Cd ~0.6-0.8)
+  Manning open channel: Q = (1/n) * A * R^(2/3) * S^(1/2)
+                        n = roughness (stone ~0.017), R = hydraulic radius, S = slope
+  Self-cleaning velocity: v_min = 0.6 m/s for sediment transport
+  Choked flow onset:    P1/P2 >= 1.893 (compressible correction required above this)
+
+2.4 ACOUSTICS
+  Speed of sound (air, 20C): c = 343 m/s
+  Speed of sound (limestone): c_stone = 4800 m/s
+  Echo delay:           t = 2d / c          (d = distance to reflecting surface)
+  Flutter echo period:  T = 2L / c          (L = room length)
+  Reverberation (Sabine): RT60 = 0.161 * V / (A_s * alpha)
+                          V = volume (m³), A_s = surface area, alpha = absorption coefficient
+  Resonant frequency (cylinder): f = c / (2L)
+
+2.5 STRUCTURAL
+  Corbel stability:     moment of cantilever <= restoring moment of mass above
+  Arch thrust:          H = (w * L²) / (8 * f)   (w = load/m, L = span, f = rise)
+  Masonry compressive stress: must not exceed 0.1 * f_c (conservative)
+  Column bearing:       sigma = P / A
+  Terrace wall Ka:      Ka = (1 - sin(phi)) / (1 + sin(phi))   (phi = soil friction angle)
+  Active earth pressure: P_a = 0.5 * Ka * gamma * h²
+
+2.6 PRECISION AND DRIFT
+  Drift suppression conditions (all must hold simultaneously):
+    R >= D              (restoration rate >= drift rate)
+    epsilon_obs <= epsilon_required   (observability meets tolerance)
+    A_c >= epsilon_bias  (control authority meets bias)
+    f_c >= 1/tau_d      (correction frequency meets drift rate)
+  Seked (Egyptian face-angle control): seked = 7B / 2H   (palms per cubit of rise)
+  Error propagation:    error_total² = error_ref² + error_reader² + error_transfer²
+
+2.7 MATERIALS REFERENCE
+  Material               Density (kg/m³)    Compressive strength (MPa)   Notes
+  Limestone              2200-2700          20-70                         Varies by quarry
+  Granite (Aswan)        2700               180-220                       Mohs 7
+  Andesite               2700-3000          80-150                        Andean volcanic
+  Sandstone              2200-2500          10-50                         Varies widely
+  Sarsen stone           2600               50                            Silicified sandstone
+  Basalt                 2900-3100          150-300                       Very hard
+  Chalk/soft limestone   1800-2100          5-20
+  Coral limestone        2000-2300          10-30
+  Gypsum mortar          1800-2000          2-8                           Plastic ~30 min
+  Roman concrete (opus caementicium): compressive ~10 MPa dry, superior to modern in seawater
+  Al-tobermorite + phillipsite crystals: secondary minerals responsible for seawater durability
+
+2.8 HUMAN FACTORS
+  Sustained horizontal pull:    300 N per person
+  Short burst:                  500 N per person
+  With leverage (pulley 5:1):   up to 1500 N effective
+  Rolling friction coefficient: 0.02 (lubricated rollers)
+  Sliding friction (stone/stone): 0.6-0.7 (dry), 0.2-0.3 (lubricated)
+  Sustained output (labor):     0.1 m³/day excavation (iron tools, hard rock)
+  Block fill bag (shicra):      25 kg per unit
+
+
+============================================================
+SECTION 3 — SITE DATABASE
+============================================================
+
+Format per entry:
+  SITE | Region | Period | Domain type
+  Key parameters | Key equations | Gate status | Modern application
+
+------------------------------------------------------------
+EGYPT / NORTH AFRICA
+------------------------------------------------------------
+
+GREAT PYRAMID OF GIZA | Egypt | ~2560 BCE | Precision masonry, hydraulic, logistics
+  Parameters:
+    Base side: 230.33 m (mean) | Height: 146.7 m | Total blocks: ~2,300,000
+    Base levelness: ±15 mm across 230 m (±0.0065%) — empirically verified
+    Face angle: 51.84° ± 0.05° | Cardinal alignment error: ~3 arcminutes
+    Limestone: 2200-2700 kg/m³ | Granite (King's Chamber): 2700 kg/m³
+    Bearing stress: ~0.50 MPa | Bearing capacity (bedrock): >> 0.50 MPa | FoS > 40
+    Subterranean chamber depth: 30-35 m below base
+    Lower hydraulic pressure at 30 m: P = 1000*9.81*30 = 294,300 Pa (42.7 psi)
+    Lower hydraulic pressure at 35 m: P = 343,350 Pa (49.8 psi)
+    Controlled vent area (choke band): 0.005-0.05 m² (plug perimeter gaps)
+    2 mm gap: A = 0.009 m² (CONDITIONAL PASS) | 20 mm gap: A = 0.090 m² (FAILS)
+    Construction schedule: baseline fails at ratio 1.47; combined repair closes at ratio 0.87 (~5,200 days)
+    Phase 2 (courses 46-130): binding constraint in every scenario
+    Upper convergence: platform area at course 206 ~19 m² (deficit 18.7 m² vs required 69 m²)
+    Precision system: seked = 5.5 palms/cubit, correction at 1.5 mm detection, 10 mm authority
+    Residue gradient prediction: lower chamber > plug interface > ascending passage > King's Chamber zone
+    Block distribution: f(k) = 1 - (1 - k/210)^3
+  Equations: P=rho*g*h | Q=Cd*A*sqrt(2dP/rho) | seked | drift suppression | f(k)
+  Surviving: lower hydraulic node physically coherent | vent choke band confirmed | schedule conditional closure
+  Blocked: hydraulic block lifting | long-range pressure transfer | Grand Gallery waveguide
+  Modern bridge: distributed constraint networks | passive hydraulic systems | drift suppression loops in precision manufacturing
+
+SERAPEUM (SAQQARA) | Egypt | ~1300 BCE | Precision granite fabrication
+  Parameters:
+    Granite boxes: ~70 tonnes each | Lid mass: ~70 tonnes
+    Granite hardness: Mohs 7 | Copper tool hardness: Mohs 3
+    Abrasive method: quartz sand slurry (Mohs 7 matches granite)
+    Preston's Law abrasive wear: dh/dt = k * P * v (removal rate proportional to pressure * velocity)
+    Lid seating tolerance: < 0.5 mm gap over full perimeter (hermetic seal function)
+    Three-point leveling: stone weights as reference datum
+    Box dimensions (typical): ~3.8 m × 2.3 m × 2.3 m interior
+    Capillary pressure for slurry: P_cap = 2*gamma*cos(theta)/r
+  Equations: Preston's Law | capillary pressure | three-point leveling geometry
+  Surviving: abrasive slurry fabrication with quartz sand physically achievable | three-point leveling sufficient
+  Blocked: copper tools cutting granite directly
+  Modern bridge: lapping and honing precision surfaces | abrasive machining | reference datum inheritance
+
+OSIREION (ABYDOS) | Egypt | ~1290 BCE | Massive granite transport, subterranean structure
+  Parameters:
+    Granite blocks: up to 100+ tonnes estimated
+    Source: Aswan quarries (~700 km by Nile)
+    Granite density: 2700 kg/m³ | Buoyancy: 1 m³ water displaces 1 tonne
+    Nile barge transport: displacement volume = mass_tonnes (water density = 1 tonne/m³)
+    Subterranean water table interaction: permanent groundwater contact
+    Beam loading: simply supported beam model for horizontal granite spans
+  Equations: W=rho*g*V | beam bending: M = wL²/8 (uniform load)
+  Surviving: river transport physically viable | beam loading within granite capacity
+  Modern bridge: barge transport logistics | subterranean structure waterproofing
+
+NUBIAN PYRAMIDS | Sudan | ~700 BCE - 350 CE | Precision decline diagnostic
+  Parameters:
+    Steeper face angles than Giza (65-70° vs 51.84°)
+    Smaller bases, taller proportions
+    Precision degradation: visible from face angles and base levelness compared to Giza
+    Institutional knowledge loss timeline: ~25-40 year transmission window
+  Evidence status: decline sequence confirms M1-M6 mechanism abandonment pattern
+  Modern bridge: institutional knowledge transfer | tacit knowledge decay rate
+
+WADI AL-JARF HARBOR | Egypt | ~2550 BCE | Logistics and harbor engineering
+  Parameters:
+    Oldest known harbor in the world (associated with Khufu construction period)
+    Stone block transport logistics to Giza site
+    L-shaped harbor basin, breakwater construction
+  Evidence status: archaeological — papyrus records of supply logistics
+
+------------------------------------------------------------
+MIDDLE EAST / LEVANT
+------------------------------------------------------------
+
+BAALBEK TRILITHON | Lebanon | ~1st-3rd century CE (Roman, possible earlier foundation) | Megalith transport and placement
+  Parameters:
+    Trilithon stone dimensions: ~19.9 m × 4.2 m × 4.2 m (approx)
+    Trilithon mass: ~800 tonnes each (limestone, density 2.7 t/m³)
+    Hajjar al-Hibla (unfinished): ~1650 tonnes (largest quarried stone known)
+    Human sustained pull: 50 kg (500 N) horizontal per person
+    Sliding friction (dry stone): mu = 0.6-0.7
+    Required workers (friction transport): F_transport = mu * W = 0.65 * 8,000,000 N = 5,200,000 N -> ~10,400 workers minimum (dry)
+    With lubrication (mu=0.2): ~3,200 workers
+    Ramp geometry: F = W*(sin(theta) + mu*cos(theta))
+    Vertical placement analysis: ramp angle, workforce, and platform constraints govern
+  Equations: F=mu*N | F_ramp | volume | mass | workforce = F_total / F_per_worker
+  Surviving: friction transport physically achievable with large workforce | ramp placement viable
+  Blocked: levitation, lost technology, supernatural agency
+  Modern bridge: heavy industrial transport | skidding large prefabricated modules | port crane operations
+
+PETRA | Jordan | ~4th century BCE - 2nd century CE | Rock-cut architecture, hydraulic water management
+  Parameters:
+    Sandstone: unit weight ~24 kN/m³ | compressive strength 10-50 MPa | cohesion ~100-300 kPa | friction angle ~35-45°
+    Rock facade heights: up to 40 m
+    Flash flood channels (siq): width ~3-4 m | Manning n ~0.030 (rough rock)
+    Flash flood flow rate: Q = (1/n)*A*R^(2/3)*S^(1/2)
+    Cistern capacity: 12 million liters estimated across full system
+    Conduit gradient: 1:100 (1%) typical
+    Population served: estimated 20,000-30,000 at peak
+  Equations: Manning | Q=Cd*A*sqrt(2gh) | rock compressive stress | Rankine sliding stability
+  Surviving: hydraulic system physically coherent | flash flood control viable | rock-cut stability confirmed
+  Modern bridge: stormwater harvesting and retention | rock-cut slope stability | passive water management
+
+------------------------------------------------------------
+EUROPE / MEDITERRANEAN
+------------------------------------------------------------
+
+STONEHENGE | England | ~3000-1500 BCE (multiple phases) | Megalith transport, structural precision, astronomical alignment
+  Parameters:
+    Sarsen stone density: 2600 kg/m³ | compressive strength: 50 MPa | shear strength: 10 MPa
+    Upright dimensions (typical): height ~4.1 m | width ~2.1 m | depth ~1.1 m
+    Upright weight: ~25 tonnes
+    Lintel: span ~3.2 m | width ~1.0 m | depth ~0.8 m | weight ~6-7 tonnes
+    Mortise-tenon joint: lintel locked to upright vertically
+    Tongue-and-groove: adjacent lintels locked horizontally
+    Sarsen source: Marlborough Downs, ~25 km
+    Bluestones: Preseli Hills, Wales, ~250 km
+    Transport force (sledge): F = mu * W = 0.5-0.7 * W (with timber sleepers)
+    Erection: A-frame or lever system; moment balance governs tipping
+  Equations: W=rho*V*g | F_friction | overturning moment | mortise-tenon shear
+  Surviving: transport achievable by organized workforce | mortise-tenon structurally sound | astronomy alignment physically achievable
+  Modern bridge: field joint design | modular assembly | astronomical orientation in architecture
+
+NEWGRANGE | Ireland | ~3200 BCE | Corbeled dome, astronomical alignment, drainage
+  Parameters:
+    Corbeled dome interior: roughly circular, ~6 m diameter
+    Stone material: quartzite and greywacke
+    Passage length: 19 m | Passage height: ~1.5-1.8 m
+    Corbel principle: each course projects inward; stability = center of mass stays within base
+    Moment condition: M_cantilever <= M_restoring (weight of courses above)
+    Winter solstice alignment: sunrise illuminates chamber floor for 17 minutes
+    Roof box: engineered opening 0.2 m × 0.65 m aligned to 134° azimuth
+    Drainage: roof stones angled outward to shed water (5-10° slope)
+  Equations: corbel stability moments | azimuth geometry | water shed slope
+  Surviving: corbel dome structurally stable | solar alignment geometrically confirmed
+  Modern bridge: corbeled vault structures | passive drainage design | buried monument waterproofing
+
+GGANTIJA | Malta | ~3600-2500 BCE | Oldest freestanding stone structure, corbeled walls
+  Parameters:
+    Limestone density: 2400 kg/m³
+    Wall construction: large coralline limestone slabs, roughly coursed
+    Corbel wall inward projection per course: variable ~50-150 mm
+    Stability condition: center of mass of all courses above must remain within base width
+    Overturning factor of safety: FoS = restoring_moment / overturning_moment
+    Max wall height achieved: ~6 m
+    Wall thickness at base: up to 6 m
+  Equations: corbel stability | center-of-mass tracking | overturning moments
+  Surviving: gravity-only masonry stability confirmed for observed geometry
+  Modern bridge: gravity retaining wall design | mass wall stability analysis
+
+MALTA HYPOGEUM (HAL SAFLIENI) | Malta | ~3600-2500 BCE | Underground acoustic engineering
+  Parameters:
+    Oracle Chamber resonant frequencies: 70 Hz ± 2 Hz and 114 Hz ± 2 Hz (Debertolis et al. 2015)
+    Chamber dimensions: ~4 m × 5 m × 3.5 m (approx)
+    Resonant frequency calculation: f = c/(2L) for primary axial mode
+    At 70 Hz: L = 343/(2*70) = 2.45 m (consistent with one chamber dimension)
+    Limestone absorption coefficient (polished): alpha = 0.01 | (rough): alpha = 0.05
+    RT60 = 0.161 * V / (A_s * alpha)
+    Carved niches and hollows modify reflection pattern
+  Equations: f=c/(2L) | Sabine RT60 | room mode analysis
+  Surviving: resonant frequencies geometrically consistent | acoustic engineering physically viable
+  Modern bridge: architectural acoustics | resonant chamber design | hearing-aid chamber geometry
+
+PARTHENON | Greece | ~447-432 BCE | Optical refinement, precision marble fabrication
+  Parameters:
+    Stylobate curvature: 110 mm rise over 69.5 m (long side) | 60 mm rise over 30.9 m (short side)
+    Unified radius of curvature: ~5,500 m (parabolic approximation)
+    Column inward lean: 60 mm deviation from plumb over 10.43 m height (~0.33°)
+    Entasis (column bulge): 17.5 mm maximum radial deviation from straight taper
+    Joint tolerance (anathyrosis): < 0.5 mm at contact faces
+    Material: Pentelic marble | density ~2700 kg/m³
+    Face angle precision: maintained ±0.05° over 69 m
+  Equations: circular arc geometry | offset = R - sqrt(R² - x²) | angular deviation geometry
+  Surviving: optical refinements achievable through derived proportions | ground-fitting of drum joints viable
+  Modern bridge: optical correction in large structures | precision precast component fabrication
+
+EPIDAURUS THEATRE | Greece | ~300 BCE | Acoustic engineering, speech projection
+  Parameters:
+    Orchestra diameter: 19.5 m (circular) | Cavea rise: 23 m
+    Seating: 55 rows | Capacity: ~14,000 | Seat width: 0.75 m | Seat gaps: 2 mm
+    Skene (stage wall): 25 m wide × 3.5 m deep
+    Frequency range for speech intelligibility: 500-4000 Hz
+    Limestone absorption coefficient: ~0.01-0.03
+    RT60 (open air, geometry-dominated): < 0.5 s effective
+    Signal-to-noise benefit from seat geometry: high-frequency noise preferentially absorbed by limestone seats
+  Equations: ray acoustics | RT60 | critical distance | seat geometry transfer function
+  Surviving: speech intelligibility across 14,000 seats physically explainable from geometry
+  Modern bridge: outdoor amphitheater design | tiered seating acoustic optimization
+
+MYCENAEAN CORBELED VAULT (Treasury of Atreus) | Greece | ~1250 BCE | Domed masonry, resonance
+  Parameters:
+    Stone density: 2500 kg/m³ | Interior diameter: ~14.5 m | Height: ~13.5 m
+    Dome volume: ~1,500 m³ (approx)
+    Each corbel course: inward projection ~100-150 mm; stability requires center-of-mass check
+    Resonant frequency (axial): f = c/(2H) = 343/(2*13.5) = 12.7 Hz (infrasound range)
+    Structural verification: moment of cantilever must not exceed restoring moment
+  Equations: corbel stability | f=c/(2H) | volume estimation
+  Surviving: corbeled dome structurally stable for observed geometry
+  Modern bridge: prestressed concrete shells | dome geometry optimization
+
+ROMAN ARCH | Rome | ~312 BCE onward | Structural arch, load transfer
+  Parameters:
+    Masonry compressive strength: 20 MPa (typical)
+    Unit weight masonry: 24 kN/m³
+    Arch horizontal thrust: H = (w * L²) / (8 * f)   (w = load per m, L = span, f = rise)
+    Compressive force in arch ring: C = H / cos(theta) at any section
+    Line of thrust must remain within middle third of arch ring
+    Typical Roman arch: semicircular (f = L/2), gives H = wL/4
+  Equations: thrust line analysis | H = wL²/(8f) | masonry compressive stress
+  Surviving: arch thrust analysis consistent with observed geometry and survival record
+  Modern bridge: arch bridge design | thrust line design | masonry analysis
+
+PONT DU GARD AQUEDUCT | France | ~40-60 CE | Hydraulic precision, masonry arch
+  Parameters:
+    Bridge length: 275 m | Height: 49 m above Gardon River | Three tiers of arches
+    Total aqueduct length: 50 km (Uzes to Nimes)
+    Gradient: 0.4 cm per 100 m = 0.004% = 1:25,000
+    Flow rate: ~20,000 m³/day (Roman estimate)
+    Channel dimensions: 1.2 m wide × 1.8 m deep
+    Manning n for Roman opus signinum lining: ~0.011-0.013
+    Flow velocity at design gradient: ~0.35 m/s (above self-cleaning minimum)
+    Leveling instrument: chorobates (water level board) — accuracy ~1:1000 achievable
+    Limestone blocks: no mortar in arches (dry-fit voussoirs)
+  Equations: Q = (1/n)*A*R^(2/3)*S^(1/2) | gradient control | arch thrust H=wL²/(8f)
+  Surviving: gradient achievable by chorobates leveling | flow rate consistent with channel dimensions
+  Modern bridge: long-distance gravity pipeline design | gradient control | aqueduct hydraulics
+
+ROMAN MARINE CONCRETE | Italy/Rome | ~1st century BCE - 2nd century CE | Materials science
+  Parameters:
+    Mix: 45% lime (CaO from volcanic ash) + 55% pozzolana (volcanic tuff/ash)
+    Seawater reaction: lime + pozzolana + seawater -> calcium-aluminum-silicate-hydrate (C-A-S-H)
+    Secondary minerals: Al-tobermorite + phillipsite form in crack voids over decades
+    Hydration saturation model: degree = 1 - exp(-k * age) where k ~ 0.02 * seawater_exposure
+    Compressive strength development: increases for centuries (unlike Portland cement)
+    Crack density reduction: secondary mineral growth heals cracks passively
+    Modern Portland cement: compressive ~30-40 MPa, degrades in seawater within decades
+    Roman concrete: ~10 MPa compressive (lower), superior long-term durability in seawater
+  Equations: hydration saturation | crack density = initial * (1 - mineral_fraction) | strength evolution
+  Surviving: chemical mechanism for seawater durability fully identified (Jackson et al. 2017)
+  Modern bridge: supplementary cementitious materials | fly ash and slag concrete | self-healing concrete
+
+FLYING BUTTRESS | France/Europe | ~1130 CE onward | Gothic structural innovation
+  Parameters:
+    Vault horizontal thrust: H = w*L/(2*f) (simplified for pointed arch)
+    Stone masonry unit weight: 25 kN/m³ | friction coefficient: 0.6
+    Buttress must redirect thrust to ground without exceeding masonry compressive capacity
+    Gothic nave heights achieved: 40-48 m (Beauvais, Amiens)
+    Without flying buttress: wall would require 3-4x thickness
+  Equations: thrust line | H = wL²/(8f) | buttress force resolution | pier stability
+  Surviving: thrust redistribution mechanism completely explained by statics
+  Modern bridge: lateral bracing design | eccentric load transfer | tall structure stability
+
+ROMAN COLOSSEUM | Rome | ~70-80 CE | Crowd flow, structural engineering, materials
+  Parameters:
+    Capacity: ~50,000-80,000 spectators
+    Elliptical plan: 188 m × 156 m outer | Arena: 83 m × 48 m
+    Height: 48 m (4 tiers) | 80 arched entrances (vomitoria)
+    Radial concrete-and-stone vaulted corridors
+    Evacuation time through vomitoria: ~10 minutes (Roman design intent)
+    Velarium (awning): rope and mast system covering outer ring — tension structure
+    Hypogeum (underground): 2-level system with elevator shafts and animal cages
+  Equations: crowd flow rate = n_exits * width * density * velocity | thrust analysis for vaults
+  Surviving: crowd flow via vomitoria physically achievable | vault thrust within material limits
+  Modern bridge: stadium crowd flow | evacuation design | tension structure systems
+
+GREEK TRIREME | Greece | ~480 BCE | Naval engineering, composite hull structure
+  Parameters:
+    Vessel length: ~37 m | Beam: ~5.5 m | Draft: ~1.1 m
+    170 oarsmen (3 banks) | Speed: up to 7-9 knots sustained
+    Hull: mortise-tenon joints throughout | shear strength per joint: 8 MPa
+    Hypozoma (tension cable): runs full length under keel | tensile capacity: 60 MPa (rope)
+    Hogging moment: M = wL²/8 (as simply supported beam on waves)
+    Hull treated as composite beam: timber compression, rope tension
+  Equations: hogging moment | mortise-tenon shear | beam bending
+  Surviving: hull structural mechanics consistent with observed performance
+  Modern bridge: composite structural systems | pre-tensioning | lightweight high-strength joinery
+
+PHOENICIAN BIREME | Levant | ~700 BCE | Naval engineering, trading vessel
+  Similar structural approach to trireme; two-bank oar arrangement.
+  Dual-hull stability analysis; cargo capacity vs. freeboard constraint.
+
+GIANTS CAUSEWAY | Northern Ireland | ~60 million years ago | Natural columnar jointing (forensic model)
+  Parameters:
+    Basalt: Young's modulus E = 50 GPa | thermal expansion alpha = 8×10⁻⁶ /°C
+    Fracture threshold: ~2 MPa tensile stress
+    Mechanism: thermal contraction of cooling basalt lava induces tensile stress
+    Fracture propagates when: sigma = E * alpha * dT >= threshold
+    Column cross-sections: predominantly hexagonal (minimum-energy crack pattern)
+    Column diameter: 0.3-0.5 m | Height: up to 12 m
+  Equations: sigma = E * alpha * dT | stress propagation | crack network geometry
+  Application: forensic constraint model for columnar jointing in any rock formation
+  Modern bridge: thermal stress in concrete | shrinkage crack prediction | columnar joint geology
+
+CORAL CASTLE | USA (Homestead, FL) | ~1920-1951 CE | Modern comparator for megalith handling
+  Parameters:
+    Coral limestone density: ~2300 kg/m³ | Largest block: ~30 tonnes
+    Sustained human force: 300 N | Pulley mechanical advantage: 5:1
+    Rolling friction: mu_rolling = 0.02 (rollers/ball bearings)
+    Bearing friction: mu_bearing = 0.001
+    One-man handling via block-and-tackle system: F_effective = MA * F_input
+    Important: Coral Castle is NOT archaeological evidence — it is a modern constraint comparator
+    It demonstrates what one skilled person with simple mechanical advantage can move
+  Modern bridge: small crew rigging | mechanical advantage systems | proof that simple tools suffice
+
+CHICHEN ITZA BALL COURT | Mexico | ~600-900 CE | Acoustic engineering, Maya construction
+  Parameters:
+    Court dimensions: 168 m long × 70 m wide | Wall height: 8 m
+    Parallel wall geometry: creates flutter echo between reflecting surfaces
+    Flutter echo period: T = 2*70/343 = 0.41 s (~2.4 Hz repetition)
+    Number of echoes: wall absorption determines decay — 7-9 echoes observed
+    Stone rings: 1.2 m diameter, mounted 6 m above floor on long walls
+    End temples: 15 m × 12 m × 12 m
+  Equations: T=2L/c | echo decay = (1-alpha)^n | flutter echo physics
+  Surviving: flutter echo pattern completely explained by parallel wall geometry
+  Modern bridge: acoustic flutter echo avoidance/design | parallel wall spacing in performance venues
+
+------------------------------------------------------------
+ASIA
+------------------------------------------------------------
+
+ANGKOR WAT | Cambodia | ~1110-1150 CE | Hydraulic network, acoustic corridors
+  Acoustic parameters:
+    Outer gallery: 800 m perimeter | 2.5 m wide × 4.5 m high (sandstone)
+    Middle gallery: 400 m perimeter | 2.2 m × 4.0 m
+    Inner gallery: 200 m perimeter | 2.0 m × 3.8 m
+    Speed of sound: 349 m/s (tropical conditions)
+    Gallery RT60: dominated by hard sandstone surfaces (alpha ~0.01-0.02)
+    Sound waveguide behavior: long parallel corridors create channeled propagation
+  Hydraulic network (broader system):
+    Baray (reservoir) system: West Baray 8 km × 2.1 km (largest) — 53 million m³ capacity
+    Drainage channels: city drainage gradient managed to avoid flooding
+    Population: ~750,000 at peak — largest pre-industrial city
+    Canal gradient: ~0.1% typical for distribution channels
+  Equations: RT60 | waveguide modes | Manning for canal flow | reservoir capacity = L*W*D
+  Modern bridge: gallery acoustic design | urban hydraulic management | passive flood control
+
+TAJ MAHAL | India | ~1632-1653 CE | Acoustic resonance, Mughal construction precision
+  Parameters:
+    Main dome: outer height ~73 m | inner chamber dome height ~28 m | diameter ~17.7 m
+    Reverberation time: ~28-30 seconds (exceptional marble acoustic behavior)
+    Marble absorption coefficient: ~0.01 (very low — nearly perfect reflector)
+    RT60 = 0.161 * V / (A_s * alpha)   Chamber volume: ~2,400 m³
+    Acoustic effect: sustained note becomes chord due to multiple reflection paths
+  Equations: RT60 | mode density | reflection path geometry
+  Modern bridge: performance hall reverberation design | marble acoustic properties
+
+LONGYOU GROTTOES | China | ~212 BCE | Underground excavation, ventilation, labor logistics
+  Parameters:
+    Rock density: 2600 kg/m³
+    24 known grottoes | Each: 10,000-30,000 m³ volume estimated
+    Worker productivity: 0.1 m³/day (iron tools, hard rock removal)
+    Human oxygen consumption: 0.02 m³/hour | Torch oxygen consumption: 0.5 m³/hour
+    Ventilation constraint: O2 must not fall below ~19.5% (danger threshold)
+    Structural columns: left in place during excavation as load-bearing pillars
+    Ceiling chisel marks: parallel grooves suggest systematic excavation pattern
+  Equations: oxygen_budget = V_cave * (0.209 - 0.195) / (O2_per_worker + O2_per_torch) | column bearing
+  Surviving: excavation achievable over centuries with organized workforce | ventilation manageable
+  Modern bridge: tunnel ventilation design | underground excavation logistics | rock pillar design
+
+BARABAR CAVES | India | ~250 BCE (Maurya period) | Precision granite polish, acoustics
+  Parameters:
+    Granite density: 2700 kg/m³ | removal rate: 0.01 m³/worker/day (iron tools)
+    Surface polish: achieves mirror finish on Mohs 7 granite without metal tools
+    Polish base rate (coarse stage): 0.08 m²/worker/day | improves with finer abrasive passes
+    Absorption coefficient (polished granite): 0.01 | (rough granite): 0.05
+    RT60 calculation: Sabine approximation for simple rectangular/elliptical geometry
+    Acoustic effect: long reverberation creates drone/ceremonial sound environment
+  Equations: Preston's Law | RT60 Sabine | surface area calculation
+  Surviving: mirror polish on granite achievable by progressive abrasive stages
+  Modern bridge: optical surface finishing | abrasive polishing processes | acoustic design for ritual spaces
+
+LIANGZHU | China | ~3300-2300 BCE | Hydraulic civil engineering, earthen dam
+  Parameters:
+    Hydraulic platform: largest Neolithic hydraulic system in China
+    Dam system: 11 dams, total ~100 km² managed water area
+    Platform base area: ~290 hectares | raised height: ~10-12 m above original ground
+    Layered embankment: alternating clay and gravel layers
+    Consolidation settlement: staged construction allows settlement under own weight
+    Water datum: river stage used as reference level for platform elevation control
+    Bearing capacity: soft soil — staged loading essential to prevent undrained failure
+  Equations: layered embankment: sigma_v = gamma * h | settlement | water datum = P/(rho*g)
+  Surviving: hydraulic engineering system physically coherent | staged construction viable
+  Modern bridge: earthen dam design | staged construction on soft ground | hydraulic datum systems
+
+CHAVIN DE HUANTAR | Peru | ~900-200 BCE | Underground gallery acoustics, ceremonial acoustics
+  Parameters:
+    Speed of sound (air, 20°C): 343 m/s | (limestone, stone-borne): 4800 m/s
+    Gallery dimensions: widths 0.9-1.8 m | heights 1.8-3.0 m | lengths up to 40 m
+    Axial resonant frequency: f = c/(2L) = 343/(2*40) = 4.3 Hz (very low — felt, not heard)
+    Key gallery modes in perceptible range: 60-200 Hz typical for smaller chambers
+    Lanzón gallery: approximately 3 m × 5 m × 5 m — modes near 34 Hz, 69 Hz
+    Limestone surfaces: alpha ~0.02-0.04
+    RT60: 2-4 seconds estimated for sealed chamber conditions
+  Equations: f=c/(2L) | RT60 Sabine | room modes | concha (shell) resonator analysis
+  Surviving: gallery resonance in perceptible range geometrically confirmed
+  Modern bridge: acoustic design for underground spaces | ceremonial acoustic engineering
+
+------------------------------------------------------------
+AMERICAS
+------------------------------------------------------------
+
+CARAL (SACRED CITY) | Peru | ~2600 BCE | Pyramid construction, shicra bag structural innovation
+  Parameters:
+    Stone density: 2500 kg/m³ | Shicra bag (filled): 25 kg each
+    Pyramid of Huanca: height ~28 m | base ~154 m × 138 m | volume ~50,000 m³ estimated
+    Shicra bags as structural fill: flexible, seismically resilient (bags accommodate movement)
+    Seismic resilience mechanism: loose-fill material in mesh bags deforms without catastrophic failure
+    Labor organization: 3,000-5,000 workers estimated from pyramid volume / productivity
+    Earliest known city in the Americas | predates writing
+  Equations: V = B*H/3 (pyramid volume) | mass = density*V | labor = mass / (productivity * days)
+  Surviving: shicra bag construction seismically resilient | pyramid scale achievable by organized labor
+  Modern bridge: gabion retaining walls (modern equivalent of shicra) | seismic energy dissipation in fill
+
+SACSAYHUAMAN | Peru | ~1438-1471 CE | Polygonal dry masonry, seismic resilience
+  Parameters:
+    Andesite density: 2900 kg/m³ | friction coefficient: 0.75 | compressive strength: 100 MPa
+    Largest blocks: ~100-150 tonnes
+    Polygonal block contact faces: 6-12 faces per block typical
+    Each additional contact face adds shear interlock capacity
+    Sliding capacity: F_slide = mu * W = 0.75 * W (dry andesite-on-andesite)
+    No mortar — blocks lock by geometry and friction
+    Seismic tolerance: irregular joint geometry prevents single failure plane
+    Typical joint precision: <1 mm gap over full contact face
+  Equations: F_friction = mu*N | multi-face shear interlock | stability ratio = resistance/demand
+  Surviving: polygonal interlock provides seismic resistance without mortar | precision achievable by abrasive fitting
+  Modern bridge: dry-stack masonry in seismic zones | irregular joint design for ductility | interlocking precast
+
+PUMA PUNKU | Bolivia | ~536-600 CE | H-block precision fabrication, interlocking masonry
+  Parameters:
+    Andesite density: 3000 kg/m³ | friction: 0.7 | compressive strength: 120 MPa
+    H-blocks: precise interlocking geometry, matching key-and-slot connections
+    Key depth: ~20-50 mm | Contact flatness tolerance: < 1 mm
+    Sliding capacity with key: F_slide = mu*W + key_bearing_resistance
+    Blocks quarried from Copacabana Peninsula (~90 km by water + land)
+  Equations: block weight | sliding with shear key | contact stress at interlocks
+  Surviving: H-block geometry achievable by stone-on-stone grinding | interlock provides sliding resistance
+  Modern bridge: precision precast interlocking elements | shear key connections in structural engineering
+
+TIWANAKU | Bolivia | ~500-1000 CE | Andesite construction, high-altitude engineering, solar alignment
+  Parameters:
+    Andesite density: 2700-3000 kg/m³ | Akapana pyramid: ~210 m × 210 m × 17 m
+    Altitude: 3,840 m above sea level — human productivity reduced ~25-30% vs sea level
+    Hydraulic productivity scaling: oxygen partial pressure = P_0 * exp(-z/8500) where z = altitude (m)
+    Interlocking dry-joint blocks similar to Sacsayhuaman
+    Solar alignment: Gateway of the Sun oriented to equinox sunrise
+    Stone clamps: I-shaped copper clamps poured in situ to lock stones
+  Equations: altitude productivity scaling | solar azimuth geometry | block mass/volume
+  Surviving: construction at altitude physically achievable with productivity adjustment | solar alignment geometrically confirmed
+  Modern bridge: high-altitude construction logistics | copper casting in-situ connection detail
+
+OLLANTAYTAMBO | Peru | ~1440-1532 CE | Downhill transport control, terraced construction
+  Parameters:
+    Granite blocks: 50-150 tonnes | quarry elevation: ~3,500-4,000 m | site elevation: ~2,792 m
+    Elevation drop available: ~700-1,200 m along route
+    Gravity-assisted transport: F_net = W*(sin(theta) - mu*cos(theta)) — must remain positive for movement
+    Braking required when: sin(theta) > mu*cos(theta) — slope exceeds friction angle
+    Critical angle: theta_critical = arctan(mu) — above this, block accelerates without braking
+    With mu=0.5: theta_critical = 26.6° — slopes above this require active braking
+    Worker braking force: 300 N per person | required braking = W*(sin(theta) - mu*cos(theta))
+  Equations: F_net = W*(sin-mu*cos) | theta_critical = arctan(mu) | braking workers = F_brake/300
+  Surviving: downhill transport with controlled braking physically viable
+  Blocked: uncontrolled gravity alone (block would accelerate catastrophically on steep slopes)
+  Modern bridge: controlled descent of heavy loads | braking system design | slope transport engineering
+
+MACHU PICCHU | Peru | ~1450-1572 CE | Terrace engineering, drainage, seismic resilience
+  Parameters:
+    Terrace walls: trapezoidal cross-section, base wider than top
+    Soil friction angle: ~30-35° (Andean soil) | Ka = (1-sin30)/(1+sin30) = 0.33
+    Active earth pressure: P_a = 0.5 * Ka * gamma * h² (gamma = 18 kN/m³ typical)
+    Seismic increment: delta_P_seismic = 0.375 * kh * gamma * h² (kh = horizontal seismic coefficient)
+    Drainage: ~60% of total construction effort estimated to be subsurface drainage
+    30 cm drainage stones beneath terrace fill | prevents saturation buildup
+    Granite masonry FoS against overturning: > 2.0 in all scenarios modeled
+  Equations: Ka | P_a = 0.5*Ka*gamma*h² | FoS overturning | drainage hydraulic head
+  Surviving: terrace stability confirmed for observed geometry | drainage system explains survival through wet season
+  Modern bridge: terrace retaining wall design | seismic earth pressure | subsurface drainage for slopes
+
+NAZCA PUQUIOS AQUEDUCT | Peru | ~500-600 CE | Underground aqueduct, filtration, seismic design
+  Parameters:
+    Aqueduct depth: 5-15 m below surface
+    Sustainable yield: 10-50 L/s per aqueduct
+    Spiral access shaft diameter: 1.5-2.5 m | Human entry clearance required
+    Shaft geometry (spiral): reduces effective descent slope for workers
+    Spiral turbulence effect: increases sediment settling before entering main channel
+    Seismic resilience: spiral geometry distributes differential ground movement
+    Stone lining: resists collapse and maintains filtration capacity
+  Equations: Q=Cd*A*sqrt(2gh) | spiral geometry descent angle | Manning for channel flow
+  Surviving: spiral shaft multi-function design (access + filtration + seismic) physically coherent
+  Modern bridge: shaft access design | passive filtration | seismic-resistant buried structures
+
+TEOTIHUACAN — PYRAMID OF THE SUN | Mexico | ~100-250 CE | Massive pyramid construction, talud-tablero
+  Parameters:
+    Height: ~65 m | Base: ~222 m × 225 m | Mass: ~2.5 million tonnes estimated
+    Talud-tablero architecture: sloped panel (talud) topped by vertical panel (tablero) — repeated per tier
+    Earth and rubble fill core | volcanic stone and concrete facing
+    Coulomb earth pressure governs pyramid fill stability
+    Bearing capacity of tepetate (volcanic substrate): high (~600-1000 kPa allowable)
+    Settlement: relatively uniform on competent volcanic substrate
+  Equations: Coulomb earth pressure | pyramid volume | bearing stress = W/A
+  Surviving: fill pyramid stability consistent with Coulomb analysis | bearing capacity adequate
+  Modern bridge: compacted fill embankment design | reinforced slope stability
+
+TIKAL TEMPLE I (GREAT JAGUAR) | Guatemala | ~732 CE | Maya corbeled vault, steep pyramid
+  Parameters:
+    Height: ~47 m | Corbeled vault: spans up to 3 m (Maya vaults narrower than Roman arches)
+    Limestone: density ~2400 kg/m³ | compressive strength ~30-50 MPa
+    Maya corbel: progressive inward projection — NOT a true arch (no thrust line)
+    Corbel stability: each course must satisfy moment balance independently
+    Seating: thin lime mortar | tolerates slight differential movement
+  Equations: corbel moment | vault thrust (zero for true corbel) | bearing stress
+  Surviving: corbeled vault structurally stable for observed span widths
+  Blocked: true arch behavior (Maya vault is not an arch — no lateral thrust transfer)
+  Modern bridge: cantilever structural elements | corbeled shelf design
+
+GOBEKLI TEPE | Turkey | ~9600 BCE | Circular layout geometry, pillar socket precision
+  Parameters:
+    T-pillars: limestone | height 3-6 m | weight 10-20 tonnes each
+    Circular enclosures: radius 5-10 m | pillars placed at even angular intervals
+    Socket geometry: pillar base cut to match socket profile | tolerances unclear but pillars stand
+    Rope-circle layout method: single center peg + rope of radius R defines circle
+    Angular placement: 360°/n pillars gives even spacing | radial accuracy = rope length consistency
+    Oldest known monumental structure
+  Equations: circle geometry | angular placement | rope-circle radius accuracy
+  Surviving: circular layout achievable by rope method | pillar socket fitting by progressive grinding
+  Modern bridge: geometric layout methods | precision socket-and-tenon connections
+
+MOAI — EASTER ISLAND (RAPA NUI) | Chile | ~1250-1500 CE | Megalith transport, rocking/walking
+  Parameters:
+    Average moai: 4 m tall | 12-20 tonnes | volcanic tuff (2000-2300 kg/m³)
+    Largest erected: ~75 tonnes
+    Rocking/walking transport model:
+      Advance per rock cycle: 0.03-0.06 m (low/baseline/high scenarios)
+      Required crew force per side: varies by rope attachment geometry
+      Sustained crew force: 300 N per person
+      Road distance to coast: up to 20 km from quarry
+    Pukao (topknots): red scoria | up to 12 tonnes | placed after erection
+    Eye socket precision: carved after erection using datum reference
+  Equations: contact mechanics | rocking stability | moment balance per cycle | force = workers * 300 N
+  Surviving: rocking/walking transport mechanically viable for slopes < 5° | rope team sizes within historical workforce
+  Modern bridge: controlled rocking of heavy objects | moment-balanced transport
+
+NAN MADOL | Micronesia | ~1200-1500 CE | Artificial island construction, basalt logistics
+  Parameters:
+    Basalt column density: 3000 kg/m³ | Natural hexagonal columns quarried from volcanic flows
+    Island count: 92 artificial islands on coral reef
+    Coral reef bearing capacity: 50-200 kPa (highly variable)
+    Bearing pressure check: sigma = W_total / A_island <= bearing_capacity
+    Basalt column transport: ~100 km from quarry | raft/canoe transport
+    Wall construction: horizontal log-cabin stacking of columnar basalt
+  Equations: bearing stress | buoyancy for raft transport | wall stability
+  Surviving: reef bearing capacity sufficient for observed island loads | raft transport physically viable
+  Modern bridge: artificial island construction | coral foundation engineering
+
+MOUND BUILDERS (HOPEWELL / MISSISSIPPIAN) | USA | ~200 BCE - 1600 CE | Earthwork precision, astronomical alignment
+  Parameters:
+    Monks Mound (Cahokia): 28 m high | 316 m × 241 m base | ~22 million cubic feet fill
+    Construction: staged layer-by-layer fill with compaction | likely over 200-300 years
+    Compaction: each layer must consolidate before next added (avoid undrained failure)
+    Copper working: cold-hammering of native copper sheets — no smelting required
+    Hopewell geometric earthworks: circles, squares, octagons aligned to lunar standstill cycle
+    Lunar standstill cycle: 18.6 years | Octagon alignment at Newark, Ohio confirmed
+  Equations: earthwork volume | staged loading consolidation | astronomical geometry
+  Surviving: earthwork construction achievable by staged labor | astronomical alignments geometrically confirmed
+  Modern bridge: staged embankment construction | compaction control | native metal cold-working
+
+BREWARRINA FISH TRAPS | Australia | ~3500-27000 BCE (estimated) | Hydraulic engineering, ecological management
+  Parameters:
+    Location: Barwon River, NSW | Stone arrangement channels fish during floods and recession
+    Trap design: series of stone-walled ponds at descending elevations
+    Hydraulic principle: rising water fills upper ponds trapping fish; receding water concentrates fish in lower ponds
+    Manning flow analysis: gap widths and wall heights calibrate flow rate through each stage
+    Construction: dry-stone walls in river current (must resist hydraulic uplift and sliding)
+    Possibly oldest human-made structure still in use
+  Equations: Manning | buoyancy uplift on wall stones | hydraulic gradient between pond stages
+  Surviving: hydrological trapping mechanism consistent with river flood physics
+  Modern bridge: fish passage engineering | staged hydraulic trapping | dry-stone in flowing water
+
+LINEAR POTTERY CULTURE LONGHOUSE | Europe | ~5500-4500 BCE | Timber structural engineering
+  Parameters:
+    Longhouse length: 20-45 m | Width: 5-7 m | Post spacing: ~1.5-2.5 m
+    Post diameter: ~0.3-0.4 m | Depth: ~1.0-1.5 m into ground
+    Roof loading: thatch weight ~30-50 kg/m² + snow load
+    Post bearing: soil bearing capacity must support post load
+    Wind load: side walls must resist horizontal wind pressure
+    Social organization implied: 50-100+ persons per longhouse; coordinated construction
+  Equations: roof load = area * load_per_m² | post bearing | wind pressure on side wall
+  Modern bridge: post-frame construction | load distribution to ground-bearing posts
+
+PERSIAN QANAT | Iran | ~1000 BCE onward | Gravity-fed underground water tunnel
+  Parameters:
+    Design gradient: 1-3 m drop per km (0.1-0.3% slope) — just enough for flow, prevents erosion
+    Water table interception: mother well at foothills reaches aquifer
+    Vertical shafts: spaced every 20-35 m for excavation access and ventilation
+    Shaft diameter: ~0.6-0.9 m (worker-entry width)
+    Total qanat length: up to 70 km (longest known)
+    Gradient equation: elevation = start_elevation - (drop_per_km * distance/1000)
+    Flow check: Q = A * v where v from Manning at design gradient
+    Excavation rate: 0.1 m³/worker/day in hard rock | faster in gravel
+  Equations: gradient | Manning for channel flow | shaft geometry | ventilation oxygen budget
+  Surviving: gravity flow physically achievable at stated gradient | aquifer interception consistent with hydrology
+  Modern bridge: gravity-fed water supply | passive cooling tunnels (wind catchers) | sustainable groundwater extraction
+
+SKARA BRAE | Scotland | ~3100-2500 BCE | Neolithic stone drainage, self-cleaning channel design
+  Parameters:
+    Stone drainage channels: width ~0.2-0.5 m | slope 1-2% | Manning n = 0.017
+    Self-cleaning velocity: v_min = 0.6 m/s (sediment transport threshold)
+    At 1% slope: v = (1/0.017) * (0.35)^(2/3) * (0.01)^(1/2) = ~0.7 m/s (PASS)
+    Hydraulic radius R = A / perimeter_wetted
+    Storm event overflow: weir discharge through overflow notch
+    Long-term maintenance: slope preserved self-cleaning, reducing blockage accumulation
+  Equations: Manning Q=(1/n)*A*R^(2/3)*S^(1/2) | self-cleaning v_min | weir discharge
+  Surviving: drainage slope produces self-cleaning velocity | hydraulic design is functional
+  Modern bridge: self-cleaning drain design | slope selection for sediment transport | stone channel sizing
+
+ARCHIMEDES SCREW | Greece/Egypt | ~250 BCE | Mechanical water lifting
+  Parameters:
+    Helix angle: ~35-40° from horizontal (maximizes water retention vs. mechanical advantage)
+    Screw diameter: variable, 0.3-1.0 m typical | Length: 3-5 m typical
+    Water column raised per revolution: H = pitch * sin(helix_angle)
+    Mechanical efficiency: ~60-80% for well-built wooden screw
+    Flow rate: Q = pitch * A_water_per_turn * RPM
+    Torque required: proportional to water weight lifted per revolution
+  Equations: H = pitch*sin(theta) | Q = pitch*A*RPM | efficiency = P_water_out/P_input
+  Surviving: mechanical analysis completely consistent | still in use today
+  Modern bridge: Archimedes screw turbines for low-head hydropower | grain elevator screws | sewage lifting
+
+------------------------------------------------------------
+TECHNOLOGY MODULES (CROSS-SITE APPLICATIONS)
+------------------------------------------------------------
+
+ROMAN ROAD ENGINEERING | Empire-wide | ~300 BCE - 400 CE | Civil engineering, surveying
+  Parameters:
+    Road width: ~6 m (via romana) | Layers: 4 (sand base + rubble + concrete + stone paving)
+    Total network: ~80,000 km paved roads
+    Maximum gradient: ~8-10% (steeper requires switchbacks)
+    Surveying instrument: groma (cross-staff) for right angles | chorobates for level
+    Groma accuracy: ~1:500 | Chorobates accuracy: ~1:1000
+    Surface camber: 1-3% for drainage
+    Stone paving: basalt or limestone polygons | self-locking under load
+  Equations: gradient = rise/run | camber slope | drainage Q per lane-meter | survey accuracy
+  Modern bridge: pavement layer design | road drainage | surveying with simple instruments
+
+ANTIKYTHERA MECHANISM | Greece | ~100-70 BCE | Precision gear train, astronomical computation
+  Parameters:
+    Material: bronze | Gear count: 37 known gears
+    Gear accuracy: tooth pitch error < 0.5 mm on surviving fragments
+    Saros cycle representation: 223 synodic months = 19 eclipse years (18.03 Julian years)
+    Metonic cycle: 235 synodic months = 19 tropical years
+    Gear ratio for Saros: 223/19 = ~11.74 — requires compound gear trains
+    Draconic gearing: accounts for Moon's nodal cycle (eclipse prediction requires this)
+    Main drive wheel: 223 teeth for Saros spiral
+    Error propagation: gear tooth error accumulates multiplicatively through gear chain
+    Gear error impact: 0.5 mm pitch error at input becomes several degrees error at final output over 18-year cycle
+  Equations: gear ratio = N_out/N_in | compound gear ratio = product of all stage ratios | error propagation
+  Surviving: gear train mechanically capable of computed astronomical cycles | error budget consistent with bronze working
+  Modern bridge: precision gear train design | compound gear ratios | error budget in precision mechanisms
+
+ANCIENT SURVEYING METHODS | Cross-cultural | ~3000 BCE onward | Geometric precision tools
+  Water level (M1): horizontal reference accurate to fractions of mm over any distance
+  Plumb bob (M2): vertical reference accurate to ~1 mm/m (affected only by wind)
+  Rope geometry (Egyptian harpedonaptai): 3-4-5 rope triangle establishes right angle
+    3-4-5: sides 3, 4, 5 units — angle between 3 and 4 is exactly 90°
+  Groma (Roman): cross-staff for right angles | accuracy ~1:500
+  Chorobates (Roman): water level board 6 m long | level accuracy ~1:1000
+  Seked (Egyptian face angle control): seked = 7B/(2H) palms per cubit of rise
+    For Giza: seked = 5.5 — directly gives face angle without trigonometry
+  Dioptra (Greek): measuring instrument for angles and gradients
+  Merkhet (Egyptian): plumb-line and sight tool for stellar alignment
+  Modern bridge: total station | laser level | GPS | all derived from same physical principles
+
+
+============================================================
+SECTION 4 — ACADEMIC EVIDENCE INDEX
+============================================================
+
+Papers in current collection and what they support:
+
+A_Course_in_History_of_Ancient_Engineeri.pdf (21pp, Ohio State)
+  -> General ancient engineering survey | pedagogical background
+
+A_New_Course_in_Ancient_Engineering.pdf (2pp, Lawrence Tech)
+  -> Academic context for teaching ancient engineering
+
+Mechanical_Engineering_in_Ancient_Egypt.pdf (13pp, IJET 2017)
+  -> Egyptian material processing, non-stone artifacts
+
+Experimental_Archaeology.pdf (23pp)
+  -> Methodology for physical reconstruction testing
+
+Baalbek_Enigma.pdf (143pp, Vigato 2026)
+  -> Baalbek Trilithon: scale, geology, conventional vs. alternative dating, Roman context
+
+Archaeoacoustics_and_Archaeoastronomy.pdf (27pp)
+  -> Cross-site acoustic and astronomical analysis methodology
+
+On_Foundations_of_Archaeoacoustics.pdf (8pp)
+  -> Theoretical basis for archaeoacoustic measurement
+
+2014_Ayres_Wozniak_and_Ramirez_The_stone.pdf (30pp, U. Oregon)
+  -> Rapa Nui (Easter Island) stone statuary: field data, quarry, dimensions
+
+TRANSPORT_METHOD_OF_MOAI_STATUES.pdf (8pp)
+  -> Moai transport methods: comparative sacred measurement systems
+
+Applying_GIS_tools_to_define_prehistoric.pdf (15pp, La Trobe/Melbourne)
+  -> GIS-based megalith transport route modeling (Olmec case study)
+
+Establishing_Megalith_Transport_Routes_U.pdf (14pp, Brodie/Hazell)
+  -> GIS methodology for megalith route analysis (general method)
+
+ARCHITECTURE_of_the_South_American_Pyram.docx (Dokras)
+  -> Inca, Aztec, Maya, Olmec pyramid survey — historical/cultural context
+
+Evidence_of_geopolymer_concrete_in_megal.pdf (52pp, Hawke 2026)
+  -> COMPETING HYPOTHESIS: Cusco megalithic architecture used geopolymer concrete
+  -> Relevant to: Sacsayhuaman, Puma Punku, Ollantaytambo precision joint question
+  -> Status: competing hypothesis — not yet consensus; constraint audits needed
+
+Phases_in_the_Unraveling_of_the_Secrets.pdf (22pp, Koetsier, VU Amsterdam)
+  -> Antikythera mechanism: history of decoding, gear system analysis
+
+Reconstructing_the_Antikythera_Mechanism.pdf (68pp, Voulgaris et al. 2023)
+  -> Antikythera: Draconic gearing, eclipse reconstruction, gear error analysis
+  -> Key source for Antikythera parameters above
+
+Hydraulic_Evaluation_of_the_Design_and_O.pdf (25pp, U. Illinois Civil Eng.)
+  -> Rome's Anio Novus aqueduct: flow rate, gradient, sediment dynamics — PEER REVIEWED
+  -> Key source for Roman hydraulic parameters
+
+Ancient_Pompeii_Water_Supply_Sources_Rou.pdf (9pp, IWA 2012)
+  -> Pompeii aqueduct distribution: sources, routes, hydraulics
+
+Thermomechanical_Analysis_of_Ancient_Rom.pdf (105pp, McCue 2019, Czech)
+  -> Roman seawater concrete: thermomechanical analysis, material properties, durability
+  -> Key source for Roman Marine Concrete parameters
+
+Reverse_Engineering_Ancient_Greek_Cerami.pdf (10pp, Getty/Northwestern)
+  -> Greek ceramics materials analysis — methodology model for materials reverse-engineering
+
+The_Baalbek_Enigma.pdf (143pp)
+  -> See above
+
+
+============================================================
+SECTION 5 — MODERN APPLICATION BRIDGES
+============================================================
+
+Translation rule (apply to all modules):
+  ancient practice -> physical principle -> modern industrial use -> constraint gates -> validation test -> failure mode
+
+Assumption tiers:
+  Tier 1: Physical invariants (gravity, water level, geometry, mass, pressure). Use freely.
+  Tier 2: Ordinary tools/materials (ropes, levers, wedges, soil, timber, stone). Use with budget.
+  Tier 3: Optional conditional extensions (vibration assist, special contact conditions). Optional only.
+  Tier 4: Prohibited inputs (lost technology, unexplained devices). Do not use.
+
+Key translation table:
+
+Ancient Practice                | Physical Principle               | Modern Application
+Water leveling as datum         | Fluid statics (hydrostatic level) | Laser level, spirit level, precision survey
+Plumb bob vertical reference    | Gravity on suspended mass        | Digital plumb, gyroscopic level, theodolite
+Rope 3-4-5 triangle             | Pythagorean constraint           | Layout squares, GPS survey closure checks
+Seked face-angle control        | Geometric ratio as slope control | Percent grade, rise/run specification
+Hydraulic lifting (Giza model)  | Pascal's law, P=rho*g*h          | Hydraulic presses, lift systems, dam gates
+Shicra bag fill                 | Flexible fill, energy dissipation| Gabion walls, rockfill dams, sandbag levees
+Corbeled vault                  | Progressive cantilever           | Cantilever bridge spans, stepped retaining
+Roman arch                      | Thrust line within masonry       | Masonry arch bridges, barrel vaults
+Flying buttress                 | Lateral thrust redistribution    | Lateral bracing, moment frames in steel
+Roman concrete pozzolana        | Secondary mineral self-healing   | Supplementary cementitious materials, GGBS, fly ash
+Polygonal dry masonry           | Multi-face friction interlock    | Dry-stack retaining walls, interlocking blocks
+Pontdu Gard gradient control    | Constant hydraulic gradient      | Gravity pipeline design, sewer slope
+Persian qanat gradient          | Minimum slope for sustained flow | Pipe drainage, storm culvert minimum grade
+Manning self-cleaning (Skara)   | v >= 0.6 m/s prevents deposition| Sewer and drain design minimum slope
+Antikythera gear train          | Compound ratio reduction         | Gearbox design, epicyclic drives
+Nazca spiral shaft              | Multi-function geometric form    | Shaft access + ventilation + seismic design
+Moai rocking transport          | Moment-balanced controlled motion| Heavy equipment walking, skidding
+Machu Picchu terrace drainage   | Subsurface drainage relieving pressure | French drain, perforated pipe behind walls
+Caral shicra bags               | Seismic energy dissipation in fill | Rubber-crumb fill, base isolation fill layers
+Sacsayhuaman polygonal joint    | Irregular joint prevents failure plane | Ductile connection design in seismic zones
+Barabar cave acoustic polish    | Near-zero absorption surfaces    | Anechoic chamber design (inverse: max absorption)
+Greek trireme hypozoma          | Pre-tensioned rope resists hogging | Pre-stressed concrete, post-tensioned beams
+
+
+============================================================
+SECTION 6 — GAP REGISTER (KNOWN MISSING COVERAGE)
+============================================================
+
+These sites have no current domain module. High priority for addition:
+
+TIER 1 GAPS (most important for coverage):
+  Pantheon dome (Rome, ~125 CE): unreinforced concrete dome, 43.3 m span, oculus 8.9 m dia
+    Key equations needed: dome thrust, hoop stress, concrete creep, oculus as compression relief ring
+  Roman Colosseum (Rome, ~70-80 CE): already summarized above — no detailed Python module
+  Carnac stones (France, ~4500-3300 BCE): 3,000+ standing stones in 4 km alignment
+    Key equations: GIS transport routing, erection force, astronomical alignment azimuths
+  Kailasa Temple, Ellora (India, ~8th century CE): carved downward from single rock face
+    Key constraint: sequence is irreversible — stone removed cannot be replaced
+    Volume removed: ~400,000 tonnes of granite
+  Great Zimbabwe (Zimbabwe, ~11th-15th century CE): dry-stone enclosures, no mortar
+    Key equations: dry-stone wall stability, no-mortar friction analysis
+
+TIER 2 GAPS:
+  Palenque aqueducts (Mexico, ~600-900 CE): only pressurized pre-Columbian water system
+  Chaco Canyon (USA, ~850-1150 CE): road network in desert, astronomical alignment
+  Cahokia / Monks Mound (USA, ~950-1350 CE): largest prehistoric earthwork in North America
+  Borobudur (Indonesia, ~8th-9th century CE): 2 million stone blocks, no mortar, Java
+  Aksum obelisks (Ethiopia, ~1st-7th century CE): 33 m granite stele, still standing
+  Lalibela rock-hewn churches (Ethiopia, ~12th century CE): 11 churches carved downward
+
+TIER 3 GAPS:
+  Angkor hydraulic network (full baray system — have acoustics only)
+  Inca road system Qhapaq Nan (40,000 km of engineered roads — have individual sites only)
+  Ancient Chinese Grand Canal (hydraulic locks, water diversion)
+  Stonehenge — Carnac transport routes (GIS analysis — have Stonehenge structure only)
+  Jericho walls (~8000 BCE — earliest known fortification)
+  Catalhoyuk (~7500 BCE — no-street roof-access settlement)
+
+
+============================================================
+END OF FILE
+============================================================
+Built by Constraint LLC — 2026
+Systems Archaeology Series
+All claims labeled with evidence status. No claim is a proof unless stated as such.
