@@ -1,0 +1,11 @@
+zone,wet_exposure_score,flow_velocity_score,evaporation_score,choke_boundary_score,contamination_risk_score,modern_access_risk_score,low_flow_deposition_score,sediment_capture_score,residue_signal,adjusted_signal,classification,expected_residue_classes
+lower_chamber,1.0,0.3,0.7,0.2,0.4,0.5,0.7,0.7,0.705,0.42299999999999993,moderate_expected,carbonate; sulfate; gypsum; chloride/salt; clay/silt sediment
+descending_passage_lower,0.8,0.6,0.5,0.1,0.4,0.6,0.4,0.32000000000000006,0.49200000000000005,0.27552000000000004,weak_expected,carbonate; sulfate; gypsum; chloride/salt; clay/silt sediment
+subterranean_horizontal_passage,0.9,0.5,0.6,0.2,0.3,0.4,0.5,0.45,0.595,0.40459999999999996,moderate_expected,carbonate; sulfate; gypsum; chloride/salt; clay/silt sediment
+well_shaft_lower,0.7,0.7,0.6,0.4,0.4,0.6,0.30000000000000004,0.21000000000000002,0.511,0.28616,weak_expected,carbonate; sulfate; gypsum; chloride/salt
+plug_upstream_face,0.9,0.4,0.8,1.0,0.2,0.3,0.6,0.54,0.8190000000000001,0.6265350000000001,moderate_expected,carbonate; sulfate; gypsum; chloride/salt; alum/metal-sulfate; clay/silt sediment
+plug_interfaces,0.8,0.8,0.9,1.0,0.2,0.3,0.19999999999999996,0.15999999999999998,0.706,0.54009,moderate_expected,carbonate; sulfate; gypsum; chloride/salt; alum/metal-sulfate
+plug_downstream_face,0.3,0.2,0.5,0.6,0.3,0.5,0.8,0.24,0.46900000000000003,0.2989875,weak_expected,chloride/salt; alum/metal-sulfate
+ascending_passage_above_plugs,0.2,0.2,0.4,0.1,0.5,0.7,0.8,0.16000000000000003,0.30600000000000005,0.14917500000000003,weak_expected,low/background residue
+grand_gallery_lower,0.15,0.2,0.4,0.1,0.5,0.7,0.8,0.12,0.28450000000000003,0.13869375000000003,weak_expected,low/background residue
+king_chamber_zone,0.05,0.1,0.3,0.0,0.4,0.8,0.9,0.045000000000000005,0.21700000000000003,0.10416000000000002,weak_expected,low/background residue
