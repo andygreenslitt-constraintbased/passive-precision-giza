@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Operators in History — Passive Precision Hypothesis Dossier</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=IBM+Plex+Mono:wght@300;400;500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #f5f0e8;
+  --surface: #ede8dc;
+  --surface2: #e4ddd0;
+  --border: #c8bfaa;
+  --border2: #b0a48e;
+  --ink: #1a1612;
+  --ink-dim: #6b5f4e;
+  --ink-faint: #9a8e7e;
+  --gold: #8b6914;
+  --gold-light: #c49a2a;
+  --red: #8b1a1a;
+  --blue-ink: #1a3a5c;
+  --green-ink: #1a4a2e;
+  --mono: 'IBM Plex Mono', monospace;
+  --display: 'Playfair Display', serif;
+  --body: 'EB Garamond', serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 17px;
+  line-height: 1.7;
+  min-height: 100vh;
+}
+
+/* Aged paper texture */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image:
+    radial-gradient(ellipse at 20% 10%, rgba(139,105,20,0.06) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 90%, rgba(139,26,26,0.04) 0%, transparent 50%),
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 0;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 60px 40px 100px;
+}
+
+/* MASTHEAD */
+.masthead {
+  text-align: center;
+  border-top: 3px double var(--border2);
+  border-bottom: 3px double var(--border2);
+  padding: 32px 0 28px;
+  margin-bottom: 48px;
+  position: relative;
+}
+
+.masthead::before {
+  content: '✦';
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--bg);
+  padding: 0 12px;
+  color: var(--gold);
+  font-size: 18px;
+}
+
+.masthead-eyebrow {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+
+.masthead h1 {
+  font-family: var(--display);
+  font-size: clamp(28px, 5vw, 48px);
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.1;
+  margin-bottom: 8px;
+}
+
+.masthead h1 em {
+  font-style: italic;
+  color: var(--gold);
+}
+
+.masthead-sub {
+  font-family: var(--body);
+  font-style: italic;
+  font-size: 15px;
+  color: var(--ink-dim);
+  margin-bottom: 16px;
+}
+
+.masthead-meta {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.masthead-meta span::before {
+  content: '· ';
+  color: var(--gold);
+}
+
+/* SECTION HEADERS */
+.section-header {
+  margin: 48px 0 24px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+}
+
+.section-letter {
+  font-family: var(--display);
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--gold);
+  line-height: 1;
+  opacity: 0.4;
+}
+
+.section-title {
+  font-family: var(--display);
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: 0.5px;
+}
+
+/* EVIDENCE BLOCKS */
+.evidence-block {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 28px 32px;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.evidence-block::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: var(--gold);
+  opacity: 0.4;
+}
+
+.evidence-date {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 6px;
+}
+
+.evidence-title {
+  font-family: var(--display);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+
+.evidence-anchor-label {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin-bottom: 12px;
+}
+
+.evidence-anchor {
+  font-family: var(--body);
+  font-style: italic;
+  font-size: 15px;
+  color: var(--ink-dim);
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+  line-height: 1.6;
+}
+
+/* Grammar passages */
+.grammar-block {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  padding: 16px 20px;
+  margin: 12px 0;
+  font-family: var(--mono);
+  font-size: 11px;
+  line-height: 2;
+  color: var(--ink-dim);
+}
+
+.grammar-block .bracket { color: var(--blue-ink); }
+
+/* Proves list */
+.proves-title {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--green-ink);
+  margin: 16px 0 8px;
+}
+
+.proves-list {
+  list-style: none;
+}
+
+.proves-item {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--ink-dim);
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(200,191,170,0.4);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 12px;
+  align-items: start;
+}
+
+.proves-item:last-child { border-bottom: none; }
+
+.proves-key {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--green-ink);
+  margin-top: 3px;
+  white-space: nowrap;
+}
+
+/* Insertion note */
+.insertion {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 1px;
+  color: var(--ink-faint);
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+  font-style: italic;
+}
+
+/* Math problems */
+.math-problem {
+  background: var(--surface2);
+  border: 1px solid var(--border2);
+  padding: 16px 20px;
+  margin: 12px 0;
+}
+
+.math-problem-title {
+  font-family: var(--display);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+
+.math-problem-body {
+  font-family: var(--mono);
+  font-size: 11px;
+  line-height: 1.8;
+  color: var(--ink-dim);
+}
+
+.math-problem-body .result {
+  color: var(--gold);
+  font-weight: 500;
+}
+
+/* Table */
+.evidence-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 24px 0;
+  font-size: 14px;
+}
+
+.evidence-table th {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  padding: 10px 14px;
+  text-align: left;
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+  font-weight: 400;
+}
+
+.evidence-table td {
+  border: 1px solid var(--border);
+  padding: 10px 14px;
+  vertical-align: top;
+  line-height: 1.5;
+  color: var(--ink-dim);
+}
+
+.evidence-table td:first-child {
+  font-family: var(--body);
+  font-weight: 500;
+  color: var(--ink);
+  font-size: 15px;
+}
+
+.evidence-table td:last-child {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--gold);
+}
+
+/* Probability block */
+.probability-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  margin: 16px 0;
+}
+
+.prob-card {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  padding: 16px;
+}
+
+.prob-label {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin-bottom: 6px;
+}
+
+.prob-value {
+  font-family: var(--display);
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--gold);
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.prob-desc {
+  font-family: var(--body);
+  font-size: 13px;
+  color: var(--ink-dim);
+  line-height: 1.4;
+}
+
+/* Diagnostic table */
+.diagnostic-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+  font-size: 13px;
+}
+
+.diagnostic-table th {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  padding: 8px 12px;
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+  font-weight: 400;
+  text-align: left;
+}
+
+.diagnostic-table td {
+  border: 1px solid var(--border);
+  padding: 8px 12px;
+  color: var(--ink-dim);
+  line-height: 1.4;
+}
+
+.diagnostic-table td:first-child { color: var(--blue-ink); font-weight: 500; }
+.diagnostic-table td:last-child { color: var(--green-ink); }
+
+/* Operator tags */
+.operator-tag {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 1px;
+  padding: 2px 8px;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  margin: 2px;
+  background: rgba(139,105,20,0.06);
+}
+
+/* Decorative divider */
+.divider {
+  text-align: center;
+  margin: 40px 0;
+  color: var(--gold);
+  font-size: 14px;
+  letter-spacing: 8px;
+  opacity: 0.5;
+}
+
+/* Remaining bricks */
+.bricks {
+  background: var(--surface2);
+  border: 1px solid var(--border2);
+  border-left: 3px solid var(--red);
+  padding: 20px 24px;
+  margin: 16px 0;
+}
+
+.bricks-title {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 12px;
+}
+
+.bricks-list {
+  list-style: none;
+}
+
+.bricks-item {
+  font-size: 14px;
+  color: var(--ink-dim);
+  padding: 4px 0;
+  display: flex;
+  gap: 10px;
+}
+
+.bricks-item::before {
+  content: '○';
+  color: var(--red);
+  opacity: 0.5;
+  flex-shrink: 0;
+}
+
+/* Insertion map */
+.insertion-map {
+  display: grid;
+  gap: 8px;
+  margin: 16px 0;
+}
+
+.map-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.map-cell {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  padding: 12px 16px;
+  font-size: 13px;
+}
+
+.map-cell .map-source {
+  font-family: var(--body);
+  font-style: italic;
+  color: var(--ink);
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+
+.map-cell .map-insert {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--gold);
+  line-height: 1.6;
+}
+
+/* Footer */
+.doc-footer {
+  border-top: 3px double var(--border2);
+  padding-top: 24px;
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.footer-left {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 1px;
+  color: var(--ink-faint);
+  line-height: 2;
+  text-transform: uppercase;
+}
+
+.footer-right {
+  font-family: var(--display);
+  font-size: 36px;
+  font-style: italic;
+  color: var(--border2);
+  line-height: 1;
+}
+
+@media (max-width: 640px) {
+  .container { padding: 40px 20px 80px; }
+  .probability-grid { grid-template-columns: 1fr; }
+  .map-row { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- MASTHEAD -->
+  <div class="masthead">
+    <div class="masthead-eyebrow">Integration File · Version 2.0</div>
+    <h1>Operators in History<br><em>Passive Precision Hypothesis</em></h1>
+    <p class="masthead-sub">From Egyptian Papyri and Related Sources — Expanded with Mathematical and Medical Corpora</p>
+    <div class="masthead-meta">
+      <span>Andy Greenslitt</span>
+      <span>2026</span>
+      <span>Systems Archaeology</span>
+      <span>PPH Status: Hypothesis Dossier</span>
+    </div>
+  </div>
+
+  <p style="font-style:italic;color:var(--ink-dim);margin-bottom:40px;font-size:16px;line-height:1.8;">Modular, citation-rich evidence blocks for testing the Passive Precision Hypothesis across Systems Archaeology, Platform Logic, Last Perfect Pyramid, Field Toolkit, and Resonance chapters. Each block is framed as support, tension, or repair material rather than proof.</p>
+
+  <div class="bricks" style="margin-top:-16px;margin-bottom:40px;">
+    <div class="bricks-title">Posture Note</div>
+    <ul class="bricks-list">
+      <li class="bricks-item">This page frames Passive Precision as a hypothesis and research program, not a proof of Egyptian intent or a settled historical claim.</li>
+      <li class="bricks-item">The operators below are interpretive lenses for comparing sources, mechanisms, and failure modes; they do not replace archaeological, textual, or engineering authority.</li>
+      <li class="bricks-item">Where the record supports multiple readings, the page preserves that uncertainty rather than forcing closure.</li>
+    </ul>
+  </div>
+
+
+  <!-- SECTION A -->
+  <div class="section-header">
+    <div class="section-letter">A</div>
+    <div class="section-title">Direct Pyramid Construction Logistics — Giza Peak</div>
+  </div>
+
+  <!-- A.1 Merer -->
+  <div class="evidence-block">
+    <div class="evidence-date">Khufu Year 27 · ~2580 BCE · Wadi el-Jarf</div>
+    <div class="evidence-title">Merer Papyrus</div>
+    <div class="evidence-anchor-label">The Anchor</div>
+    <div class="evidence-anchor">Daily logs of Inspector Merer's phyle transporting Tura limestone casing stones to Giza. The only first-hand account of Giza construction from the reign of Khufu.</div>
+
+    <div class="proves-title">Key Passages — Decoded Grammar</div>
+    <div class="grammar-block">
+      <span class="bracket">[Inspector Merer/phyle]</span> + <span class="bracket">[hauling stones/cast off]</span> + <span class="bracket">[loaded with stone]</span> + <span class="bracket">[from Tura South to Akhet-Khufu/Giza]</span><br>
+      <span class="bracket">[Inspector Merer/phyle]</span> + <span class="bracket">[carrying out works/lifting piles]</span> + <span class="bracket">[15 phyles of aper-teams]</span> + <span class="bracket">[dyke materials]</span> + <span class="bracket">[on dyke in Ro-She Khufu]</span><br>
+      <span class="bracket">[Director of 6 Idjeru]</span> + <span class="bracket">[casts off/hauling/loading]</span> + <span class="bracket">[40 sacks-khar + large heqat]</span> + <span class="bracket">[bread-beset/food]</span> + <span class="bracket">[from Heliopolis to Tura North]</span>
+    </div>
+
+    <div class="proves-title">2023–2025 Expansions (Tallet)</div>
+    <p style="font-size:15px;color:var(--ink-dim);margin-bottom:12px;">"Measuring the channel" and "raising the dyke" explicitly documented. Harbor maintenance notes and seasonal ration spikes during Nile flood support a passive environmental gating interpretation. Copper tool inventories show material anchoring.</p>
+
+    <div class="proves-title">What This Supports</div>
+    <ul class="proves-list">
+      <li class="proves-item"><span class="proves-key">HYD_DATUM</span><span>Hydraulic Datum Bootstrap — direct textual evidence of water-level measurement and dyke construction at Giza's entry gate (Ro-She Khufu)</span></li>
+      <li class="proves-item"><span class="proves-key">ORTHO_TEAM</span><span>Phyle System as Orthogonal Constraints — ~200 men/team, operating independently → low correlation between quarry, transport, and placement teams</span></li>
+      <li class="proves-item"><span class="proves-key">PASSIVE</span><span>Passive Gating — flood-timed operations reduce human force variability by submitting to environmental constraint</span></li>
+      <li class="proves-item"><span class="proves-key">MATERIAL</span><span>Material Anchoring — all quantities tied to physical units (sacks, heqat, stone loads)</span></li>
+    </ul>
+    <div class="insertion">→ Platform Logic, Ch. "Geometry of Water" · Systems Archaeology, Ch. "Giza as Mature Phase"</div>
+  </div>
+
+  <!-- A.2 Reisner -->
+  <div class="evidence-block">
+    <div class="evidence-date">Khafre/Menkaure · ~2560–2530 BCE · Heit el-Ghurab</div>
+    <div class="evidence-title">Reisner Papyri</div>
+    <div class="evidence-anchor-label">The Anchor</div>
+    <div class="evidence-anchor">Daily logs from Giza workers' settlement housing ~10–20K people. Covers the full operational infrastructure of the Giza plateau during construction of Khafre and Menkaure's pyramids.</div>
+
+    <div class="proves-title">Key Content</div>
+    <p style="font-size:15px;color:var(--ink-dim);margin-bottom:12px;">Phyle rosters ("Friends of Khafre," "Drunkards of Menkaure"). Ration tallies: 10 loaves + beer per man/day. Tool inventories: copper chisels, wooden sleds. <strong style="color:var(--ink)">"Levelling the platform"</strong> — explicit reference to site prep precision work. Attendance and absenteeism logs — daily checks built into system.</p>
+
+    <div class="proves-title">What This Supports</div>
+    <ul class="proves-list">
+      <li class="proves-item"><span class="proves-key">VERIFY</span><span>Keeper Function Proto-Evidence — daily verification checks (absenteeism flagged, rations adjusted) — the immune system of the project</span></li>
+      <li class="proves-item"><span class="proves-key">ORTHO_TEAM</span><span>Orthogonal Constraints Supported — separate gangs for quarry, transport, placement → independent failure modes</span></li>
+      <li class="proves-item"><span class="proves-key">HYD_DATUM</span><span>Precision Bootstrap — "Levelling" implies water datum trenches/pools for flatness establishment</span></li>
+      <li class="proves-item"><span class="proves-key">STACK</span><span>Continuity — same phyle naming conventions as Merer → unified administrative system across reigns</span></li>
+    </ul>
+    <div class="insertion">→ Systems Archaeology, Ch. "Giza Maturity: The Keeper Layer" · Last Perfect Pyramid, Sahure vignette prologue</div>
+  </div>
+
+  <div class="divider">✦ · · · ✦</div>
+
+  <!-- SECTION B -->
+  <div class="section-header">
+    <div class="section-letter">B</div>
+    <div class="section-title">Administrative Continuity and Decline</div>
+  </div>
+
+  <!-- B.1 Abusir -->
+  <div class="evidence-block">
+    <div class="evidence-date">5th Dynasty · ~2400–2300 BCE · Neferirkare/Nyuserre</div>
+    <div class="evidence-title">Abusir Papyri</div>
+    <div class="evidence-anchor-label">The Anchor</div>
+    <div class="evidence-anchor">Temple journals from pyramid complexes post-Giza. The first administrative record showing the system maintaining itself rather than building.</div>
+
+    <div class="proves-title">What This Supports</div>
+    <ul class="proves-list">
+      <li class="proves-item"><span class="proves-key">DECLINE</span><span>Decline Signature Visible — shift from mega-build logistics to temple cult maintenance. Smaller scale, ritualized. The keeper function replacing the builder function.</span></li>
+      <li class="proves-item"><span class="proves-key">LOOP</span><span>Keeper Function Formalizing — daily and seasonal checks on offerings and structures become sacred duty. The verification loop persists as ritual.</span></li>
+      <li class="proves-item"><span class="proves-key">HYD_DATUM</span><span>Water Datum Echo — basin cleaning and measurement persist. Passive level reference survives the building phase.</span></li>
+      <li class="proves-item"><span class="proves-key">DERIVE</span><span>Precision Drop — no sub-mm tolerances mentioned. Functional adequacy replaces passive precision. First measurable decay signal.</span></li>
+    </ul>
+    <div class="insertion">→ Last Perfect Pyramid, Ch. "The Drift After Giza" · Systems Archaeology, Ch. "Post-Peak Brittleness"</div>
+  </div>
+
+  <!-- B.2 Kahun -->
+  <div class="evidence-block">
+    <div class="evidence-date">12th Dynasty · ~1895–1878 BCE · Senusret II · Fayoum</div>
+    <div class="evidence-title">Kahun / Lahun Papyri</div>
+    <div class="evidence-anchor-label">The Anchor</div>
+    <div class="evidence-anchor">~1000+ fragments from pyramid town for Senusret II's complex. The largest administrative archive from Middle Kingdom Egypt — and the first showing bureaucratic strain.</div>
+
+    <div class="proves-title">What This Supports</div>
+    <ul class="proves-list">
+      <li class="proves-item"><span class="proves-key">HYDRAULIC</span><span>Hydraulic Logic Inherited — Fayoum canal work requires level measurement and flood management. The "first engineer" logic persists 700 years after Giza.</span></li>
+      <li class="proves-item"><span class="proves-key">ORTHO_TEAM</span><span>Phyle System Persists but Scales Down — same gang structure applied to smaller projects. Architecture preserved, ambition reduced.</span></li>
+      <li class="proves-item"><span class="proves-key">DECLINE</span><span>Decline Signal — bureaucratic strain visible (absenteeism lists, supply shortfalls). Keepers weakening. Institutional decay beginning.</span></li>
+      <li class="proves-item"><span class="proves-key">MATERIAL</span><span>Material Anchoring Maintained — all rations tied to physical units. Little room for floating abstraction in this record. One constraint that appears to persist.</span></li>
+    </ul>
+    <div class="insertion">→ Platform Logic, "Hydraulic Legacy" appendix · Last Perfect Pyramid, Ch. "Middle Kingdom Echoes"</div>
+  </div>
+
+  <!-- B.3 Gebelein -->
+  <div class="evidence-block">
+    <div class="evidence-date">Early 4th Dynasty · ~2600 BCE · South of Thebes</div>
+    <div class="evidence-title">Gebelein Papyri</div>
+    <div class="evidence-anchor-label">The Anchor</div>
+    <div class="evidence-anchor">Fragments from south of Thebes, early Old Kingdom. Likely Sneferu-era. The administrative OS emerging before it reached its peak.</div>
+
+    <div class="proves-title">What This Supports</div>
+    <ul class="proves-list">
+      <li class="proves-item"><span class="proves-key">STACK</span><span>Proto-System Pre-Giza — shows the administrative OS emerging before the peak. The stack building before it could bear full load.</span></li>
+      <li class="proves-item"><span class="proves-key">DERIVE</span><span>Metrological Roots — land measurement requires the same precision tools as pyramid layout. The derivation ethos is pre-Giza.</span></li>
+      <li class="proves-item"><span class="proves-key">PHASE</span><span>Starting-Point Arc Supported — Djoser → Sneferu → Khufu progression has textual support. Phase transition visible in the record.</span></li>
+    </ul>
+    <div class="insertion">→ Systems Archaeology, Ch. "Origins: The Dynastic Transition"</div>
+  </div>
+
+  <div class="divider">✦ · · · ✦</div>
+
+  <!-- SECTION C -->
+  <div class="section-header">
+    <div class="section-letter">C</div>
+    <div class="section-title">Mathematical Foundations — The "How" of Passive Precision</div>
+  </div>
+
+  <!-- C.1 Rhind -->
+  <div class="evidence-block">
+    <div class="evidence-date">c. 1650 BCE copy · originating ~1850–1650 BCE</div>
+    <div class="evidence-title">Rhind Mathematical Papyrus</div>
+    <div class="evidence-anchor-label">The Anchor</div>
+    <div class="evidence-anchor">Scribe Ahmes' copy — 84 problems, the definitive source on Egyptian practical geometry. Problems 56–60 deal directly with pyramid slope calculation.</div>
+
+    <div class="proves-title">Pyramid Problems — Seked Derivation</div>
+
+    <div class="math-problem">
+      <div class="math-problem-title">Problem 56 — Find the seked</div>
+      <div class="math-problem-body">
+        Pyramid: height 250 cubits · base 360 cubits<br>
+        Half base = 180 cubits<br>
+        Run:rise ratio = 180/250 = 72/100<br>
+        <span class="result">Seked = 5 palms + 1 finger</span><br><br>
+        Interpretation: Slope is DERIVED from base and height. No fixed magic number is required by this reading.
+      </div>
+    </div>
+
+    <div class="math-problem">
+      <div class="math-problem-title">Problem 57 — Find the base (inverse)</div>
+      <div class="math-problem-body">
+        Pyramid: height 140 cubits · seked = 5 palms 1 finger<br>
+        <span class="result">System appears invertible — constraints work both ways</span><br>
+        The same operator can be read forward and backward in the problem structure.
+      </div>
+    </div>
+
+    <div class="math-problem">
+      <div class="math-problem-title">Problem 59 — Derive and verify</div>
+      <div class="math-problem-body">
+        Includes explicit verification step — "do it thus"<br>
+        <span class="result">VERIFY-like operator visible in the problem grammar</span>
+      </div>
+    </div>
+
+    <div class="proves-title">What This Supports</div>
+    <ul class="proves-list">
+      <li class="proves-item"><span class="proves-key">DERIVE</span><span>"Always Derive" Pattern Supported — The cited problems support a derived-parameter reading rather than a fixed-number reading. Always computed from constraints. Seked = cot(face angle) emerges from inputs.</span></li>
+      <li class="proves-item"><span class="proves-key">PASSIVE</span><span>Passive Precision Mechanism — set run per rise ratio → gravity and stacking do the rest. Error may be damped because the geometry constrains each course.</span></li>
+      <li class="proves-item"><span class="proves-key">VERIFY</span><span>Audit Layer — many problems include "do it thus" with checks. Verification is built into the method, not added afterward.</span></li>
+      <li class="proves-item"><span class="proves-key">MATERIAL</span><span>Material Anchoring — units = cubits, palms, fingers (1 cubit = 7 palms = 28 fingers). Every calculation touches physical reality.</span></li>
+    </ul>
+    <div class="insertion">→ Resonance/Geometry volume, Ch. "Seked: The Original Derived Parameter" · Field Toolkit, "Slope as Constraint"</div>
+  </div>
+
+  <!-- C.2 Moscow -->
+  <div class="evidence-block">
+    <div class="evidence-date">c. 1850 BCE</div>
+    <div class="evidence-title">Moscow Mathematical Papyrus</div>
+    <div class="evidence-anchor-label">The Anchor</div>
+    <div class="evidence-anchor">25 problems including the famous frustum volume calculation — mathematically exact, 1,000+ years before the Greeks formalized equivalent methods.</div>
+
+    <div class="math-problem">
+      <div class="math-problem-title">Problem 14 — Frustum of a Square Pyramid</div>
+      <div class="math-problem-body">
+        Base side = 4 units · top side = 2 units · height = 6 units<br>
+        Formula: V = h/3 × (a² + ab + b²)<br>
+        <span class="result">Volume = 56 cubic units — exactly correct by modern standards</span>
+      </div>
+    </div>
+
+    <div class="proves-title">What This Supports</div>
+    <ul class="proves-list">
+      <li class="proves-item"><span class="proves-key">DERIVE</span><span>Volume as Emergent Property — height and base areas given as inputs, volume emerges as output. Not treated as arbitrary in this reading.</span></li>
+      <li class="proves-item"><span class="proves-key">STACK</span><span>Layered/Modular Thinking — frustum = whole pyramid minus top. Stacking logic matches course-by-course damping in construction.</span></li>
+      <li class="proves-item"><span class="proves-key">PHASE</span><span>Systems Thinking — truncation implies understanding of how layers relate to the whole. Phase-aware geometry.</span></li>
+    </ul>
+    <div class="insertion">→ Systems Archaeology, "Volume as Emergent Property" · Resonance volume, "Stacking Logic"</div>
+  </div>
+
+  <div class="divider">✦ · · · ✦</div>
+
+  <!-- SECTION D -->
+  <div class="section-header">
+    <div class="section-letter">D</div>
+    <div class="section-title">Medical and Forensic Parallels — Keeper Function Analogy</div>
+  </div>
+
+  <div class="evidence-block">
+    <div class="evidence-date">c. 1600 BCE copy of Old Kingdom original · ~3000–2500 BCE</div>
+    <div class="evidence-title">Edwin Smith Papyrus</div>
+    <div class="evidence-anchor-label">The Anchor</div>
+    <div class="evidence-anchor">Surgical treatise — 48 cases of trauma with diagnosis, prognosis, and treatment. The oldest known clinical decision tree. Predates the Giza construction records it parallels.</div>
+
+    <div class="proves-title">Case Structure — The Diagnostic Operator</div>
+    <div class="grammar-block">
+      1. TITLE &nbsp;&nbsp;&nbsp;&nbsp;"Instructions concerning a [injury]"<br>
+      2. EXAMINE &nbsp;&nbsp;"If you examine a man having..."<br>
+      3. DIAGNOSE &nbsp;"You should say: 'This is a [condition]'"<br>
+      4. PROGNOSE &nbsp;"An ailment I will treat / contend with / not treat"<br>
+      5. TREAT &nbsp;&nbsp;&nbsp;Step-by-step instructions
+    </div>
+
+    <div class="proves-title">Parallel to Pyramid Administration</div>
+    <table class="diagnostic-table">
+      <tr><th>Medical System</th><th>Pyramid Admin System</th></tr>
+      <tr><td>Examine patient</td><td>Audit phyle logs</td></tr>
+      <tr><td>Diagnose condition</td><td>Detect deviation</td></tr>
+      <tr><td>Prognose outcome</td><td>Predict completion</td></tr>
+      <tr><td>Treat with constraints</td><td>Apply passive forces</td></tr>
+      <tr><td>Verify healing</td><td>Verify level and dimension</td></tr>
+    </table>
+
+    <div class="proves-title">What This Supports</div>
+    <ul class="proves-list">
+      <li class="proves-item"><span class="proves-key">VERIFY</span><span>Keeper Function as Diagnostic System — a parallel structure to pyramid administration: examine, diagnose, treat, verify.</span></li>
+      <li class="proves-item"><span class="proves-key">PASSIVE</span><span>Passive Healing — treatments rely on natural healing constraints (immobilization, honey as antiseptic). Submit to physics. A comparable constraint-following principle appears in bodily repair.</span></li>
+      <li class="proves-item"><span class="proves-key">MATERIAL</span><span>Material Anchoring — treatments use physical materials (honey, grease, lint, splints). No floating abstractions in medicine either.</span></li>
+    </ul>
+    <div class="insertion">→ Systems Archaeology, "The Keeper Function: Medical Parallel" · Preface to Decline section</div>
+  </div>
+
+  <div class="divider">✦ · · · ✦</div>
+
+  <!-- SECTION E -->
+  <div class="section-header">
+    <div class="section-letter">E</div>
+    <div class="section-title">Recent Hydraulic and Precision Anchors — 2024–2026</div>
+  </div>
+
+  <div class="evidence-block">
+    <div class="evidence-date">Landreau et al. · PLOS ONE 2024</div>
+    <div class="evidence-title">Djoser Hydraulic System</div>
+    <div class="evidence-anchor-label">The Finding</div>
+    <div class="evidence-anchor">Gisr el-Mudir identified as check dam (360×620m). Dry Moat as filtration system. Vertical shafts as hydraulic elevators. Hydraulic force used 100+ years before Giza.</div>
+
+    <div class="proves-title">Key Evidence</div>
+    <p style="font-size:15px;color:var(--ink-dim);margin-bottom:12px;">Zoned walls for stability. L-shaped outlets for regulated flow. Southern compartments settle and filter sediment. North and south shafts linked by tunnels — water fills, buoyancy lifts stone-laden float. Granite plugs and orifices control flow: a candidate passive-gating mechanism.</p>
+
+    <div class="proves-title">What This Supports</div>
+    <ul class="proves-list">
+      <li class="proves-item"><span class="proves-key">HYDRAULIC</span><span>Water-as-constraint reading supported archaeologically — 100+ years before Giza. The Merer dyke logic has a direct precursor.</span></li>
+      <li class="proves-item"><span class="proves-key">PASSIVE</span><span>Passive Constraint Mechanism — water level as external reference, flow gated by geometry. Human judgment is reduced at the gate once the physical constraint is set.</span></li>
+      <li class="proves-item"><span class="proves-key">GATE</span><span>Granite plugs and orifices — possible physical analogue of the GATE operator: pass or stop by geometry.</span></li>
+    </ul>
+    <div class="insertion">→ Platform Logic, "Hydraulic Origins: Djoser" · Systems Archaeology, "The Deep Precedent"</div>
+  </div>
+
+  <div class="evidence-block">
+    <div class="evidence-date">ScanPyramids · GPR · ERT · 2023–2025</div>
+    <div class="evidence-title">Precision Reassessment</div>
+    <div class="evidence-anchor-label">The Finding</div>
+    <div class="evidence-anchor">Base levelness holds at ±15mm over 230m (0.0065% error). Cardinal alignment ±3 arcminutes. Petrie's 1883 numbers remain compatible with later measurement and scanning reports.</div>
+
+    <div class="proves-title">What This Supports</div>
+    <ul class="proves-list">
+      <li class="proves-item"><span class="proves-key">VERIFY</span><span>Precision Signal Remains Material — numbers survive modern multi-modal NDT. The precision signal remains material enough to require explanation.</span></li>
+      <li class="proves-item"><span class="proves-key">HYD_DATUM</span><span>Platform Bootstrap Hypothesis Supported — ±15mm flatness achievable via water-channel perimeter. The method is physically plausible.</span></li>
+    </ul>
+    <div class="insertion">→ Precision Paradox chapter, "Modern Measurement Context"</div>
+  </div>
+
+  <div class="evidence-block">
+    <div class="evidence-date">Acoustic Studies · 2020–2025</div>
+    <div class="evidence-title">Resonance — King's Chamber Modes</div>
+    <div class="evidence-anchor-label">The Finding</div>
+    <div class="evidence-anchor">King's Chamber modes ~117–121 Hz (low male voice range). Overtones to ~440 Hz (A-note). Shafts as possible waveguides. No evidence of intentional tuning to fixed target.</div>
+
+    <div class="proves-title">What This Supports</div>
+    <ul class="proves-list">
+      <li class="proves-item"><span class="proves-key">RESONANCE</span><span>Emergent Frequencies — bands emerge from granite dimensions and stiffness. Not tuned. Derived. Like the seked, resonance is an output of material constraints.</span></li>
+      <li class="proves-item"><span class="proves-key">PASSIVE</span><span>Matches Monte Carlo Envelopes — stiffness 5e8–2e9 N/m², block heights 0.6–0.8m, density 2400–2600 kg/m³ yield bands in the observed range.</span></li>
+    </ul>
+    <div class="insertion">→ Resonance volume, "Empirical Correlates"</div>
+  </div>
+
+  <div class="divider">✦ · · · ✦</div>
+
+  <!-- SECTION F -->
+  <div class="section-header">
+    <div class="section-letter">F</div>
+    <div class="section-title">Master Evidence Table — All Sources Tied to Pillars</div>
+  </div>
+
+  <table class="evidence-table">
+    <tr>
+      <th>Pillar</th>
+      <th>Evidence Source</th>
+      <th>Operator</th>
+      <th>Support Role</th>
+    </tr>
+    <tr>
+      <td>Hydraulic Datum / Passive Force</td>
+      <td>Merer (dyke/channel), Djoser shafts, Kahun irrigation</td>
+      <td><span class="operator-tag">HYD_DATUM</span><span class="operator-tag">PASSIVE</span></td>
+      <td>strong hydraulic anchor</td>
+    </tr>
+    <tr>
+      <td>Orthogonal Constraints</td>
+      <td>Merer/Reisner phyles (independent gangs)</td>
+      <td><span class="operator-tag">ORTHO_TEAM</span></td>
+      <td>administrative support</td>
+    </tr>
+    <tr>
+      <td>Derived Parameters (Always Derive)</td>
+      <td>Rhind seked problems, Moscow frustum</td>
+      <td><span class="operator-tag">DERIVE</span></td>
+      <td>derived-geometry anchor</td>
+    </tr>
+    <tr>
+      <td>Keeper Function / Maintenance</td>
+      <td>Reisner daily checks, Abusir repairs, Edwin Smith</td>
+      <td><span class="operator-tag">VERIFY</span><span class="operator-tag">LOOP</span></td>
+      <td>keeper-loop support</td>
+    </tr>
+    <tr>
+      <td>Decline Signature</td>
+      <td>Abusir scale-down, Kahun strain, Sahure vignette</td>
+      <td><span class="operator-tag">DECLINE</span></td>
+      <td>decline-pattern support</td>
+    </tr>
+    <tr>
+      <td>Material Anchoring</td>
+      <td>All papyri (cubits, loaves, heqat, sacks)</td>
+      <td><span class="operator-tag">MATERIAL</span></td>
+      <td>baseline material anchor</td>
+    </tr>
+    <tr>
+      <td>Resonance as Emergent</td>
+      <td>King's Chamber modes, Monte Carlo matches</td>
+      <td><span class="operator-tag">RESONANCE</span><span class="operator-tag">PASSIVE</span></td>
+      <td>speculative support</td>
+    </tr>
+    <tr>
+      <td>Precision Anomaly</td>
+      <td>ScanPyramids reconfirmation</td>
+      <td><span class="operator-tag">VERIFY</span><span class="operator-tag">DERIVE</span></td>
+      <td>measurement anchor</td>
+    </tr>
+  </table>
+
+  <div class="divider">✦ · · · ✦</div>
+
+  <!-- SECTION G -->
+  <div class="section-header">
+    <div class="section-letter">G</div>
+    <div class="section-title">Hypothesis Support Map — PPH Coherence</div>
+  </div>
+
+  <p style="font-family:var(--body);font-style:italic;color:var(--ink-dim);margin-bottom:20px;">This section is a qualitative support map for the Passive Precision Hypothesis. It does not assign proof, probability, or academic acceptance; it records which operator readings are strongly anchored, which are plausible, and which remain speculative.</p>
+
+  <div class="probability-grid">
+    <div class="prob-card">
+      <div class="prob-label">Hydraulics</div>
+      <div class="prob-value">Strong Anchor</div>
+      <div class="prob-desc">Merer dyke/channel notes and Djoser hydraulic interpretation support water as a serious constraint candidate.</div>
+    </div>
+    <div class="prob-card">
+      <div class="prob-label">Derived Geometry</div>
+      <div class="prob-value">Strong Anchor</div>
+      <div class="prob-desc">Rhind and Moscow support a derived-parameter reading: values emerge from declared constraints.</div>
+    </div>
+    <div class="prob-card">
+      <div class="prob-label">Orthogonal Admin</div>
+      <div class="prob-value">Well Supported</div>
+      <div class="prob-desc">Phyle systems across multiple records support independent-team / separated-failure-mode analysis.</div>
+    </div>
+    <div class="prob-card">
+      <div class="prob-label">Decline / Keepers</div>
+      <div class="prob-value">Plausible Pattern</div>
+      <div class="prob-desc">Abusir and Kahun make a maintenance/strain reading plausible, while causes remain multifactorial.</div>
+    </div>
+    <div class="prob-card">
+      <div class="prob-label">Resonance</div>
+      <div class="prob-value">Speculative Edge</div>
+      <div class="prob-desc">Emergent frequencies are a useful constraint reading; intentional tuning remains unproved.</div>
+    </div>
+    <div class="prob-card" style="background:var(--surface2);border-color:var(--gold);">
+      <div class="prob-label">Overall PPH Posture</div>
+      <div class="prob-value" style="font-size:28px;">Research Hypothesis</div>
+      <div class="prob-desc">Strong enough to organize a research program and invite critique; not positioned as proof or settled history.</div>
+    </div>
+  </div>
+
+  <div class="bricks">
+    <div class="bricks-title">Remaining Gaps</div>
+    <ul class="bricks-list">
+      <li class="bricks-item">No direct "seed-first" sequence in any papyrus — though Rhind invertibility implies it</li>
+      <li class="bricks-item">Resonance intentionality still speculative — emergent reading supported, purposeful design unproven</li>
+      <li class="bricks-item">Decline causes multifactorial — drought, politics, not just keeper loss</li>
+    </ul>
+  </div>
+
+  <div class="divider">✦ · · · ✦</div>
+
+  <!-- SECTION H -->
+  <div class="section-header">
+    <div class="section-letter">H</div>
+    <div class="section-title">Suggested Insertion Map</div>
+  </div>
+
+  <div class="insertion-map">
+    <div class="map-row">
+      <div class="map-cell">
+        <div class="map-source">Systems Archaeology, Ch. "Giza Maturity"</div>
+        <div class="map-insert">Merer + Reisner phyle details · daily checks · orthogonal constraint support</div>
+      </div>
+      <div class="map-cell">
+        <div class="map-source">Systems Archaeology, Ch. "Decline"</div>
+        <div class="map-insert">Abusir → Kahun transition · keeper failure sequence · strain signatures</div>
+      </div>
+    </div>
+    <div class="map-row">
+      <div class="map-cell">
+        <div class="map-source">Platform Logic, "Geometry of Water"</div>
+        <div class="map-insert">Merer dyke quotes · Djoser hydraulic summary · passive gating mechanism</div>
+      </div>
+      <div class="map-cell">
+        <div class="map-source">Last Perfect Pyramid</div>
+        <div class="map-insert">Sahure vignette extended with Abusir/Kahun context · decline arc</div>
+      </div>
+    </div>
+    <div class="map-row">
+      <div class="map-cell">
+        <div class="map-source">Resonance Volume</div>
+        <div class="map-insert">Rhind seked derivation · King's Chamber modes · emergent frequency support</div>
+      </div>
+      <div class="map-cell">
+        <div class="map-source">Field Toolkit</div>
+        <div class="map-insert">Add check_seked_derivation routine · VERIFY operator implementation</div>
+      </div>
+    </div>
+    <div class="map-row">
+      <div class="map-cell" style="grid-column: 1 / -1;">
+        <div class="map-source">Precision Paradox chapter</div>
+        <div class="map-insert">ScanPyramids reconfirmation data · ±15mm over 230m · ±3 arcminutes cardinal · Petrie numbers retained as measurement anchor</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="doc-footer">
+    <div class="footer-left">
+      Author: Andy Greenslitt<br>
+      Version: 2.0 — Expanded with Mathematical/Medical Papyri<br>
+      Status: Hypothesis support dossier<br>
+      PPH posture: support map, not proof<br>
+      Date: 2026
+    </div>
+    <div class="footer-right">Atlas</div>
+  </div>
+
+</div>
+</body>
+</html>
